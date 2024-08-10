@@ -2,19 +2,15 @@
 import { encodePath } from "../../../../utilities/Utils";
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaUser, FaUsers, FaGlobe, FaSync, FaBuilding, FaThList, FaEllipsisH } from 'react-icons/fa'; // Importing icons
+import { FaUser, FaUsers, FaGlobe, FaSync, FaBuilding, FaThList, FaEllipsisH } from 'react-icons/fa';
+import "./UserModule.css";
 const UserModule = () => {
-  // const [activeSubMenu, setActiveSubMenu] = useState('');
-  // const handleSubMenuClick = (menu) => {
-  //   setActiveSubMenu(activeSubMenu === menu ? '' : menu);
-  // };
-
   return (
     <>
       <DropdownButton variant="light"
         id="dropdown-basic-button"
         title={
-          <span>
+          <span className="module-button">
             <FaUsers className="me-2" />
             User Module 
           </span>

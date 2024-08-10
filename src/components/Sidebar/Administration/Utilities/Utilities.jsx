@@ -6,7 +6,7 @@ import { LuUtilityPole } from "react-icons/lu";
 import { CgImport } from "react-icons/cg";
 import { PiExportBold, PiTextUnderlineBold } from "react-icons/pi";
 import { FcMultipleInputs } from "react-icons/fc";
-import { GrUpdate } from "react-icons/gr";
+import "./Utilities.css";
 
 const Utilities = () => {
   const [activeSubMenu, setActiveSubMenu] = useState('');
@@ -16,11 +16,11 @@ const Utilities = () => {
   return (
     <>
       <DropdownButton variant="light" title={
-        <span>
+        <span className="module-button ">
           <LuUtilityPole className="me-2" /> Utilities
         </span>
       }>
-        <Dropdown.Item className="">
+        <Dropdown.Item >
           <Link to={`/${encodePath('dt-im')}`} className="d-inline-flex text-dark align-items-center text-decoration-none rounded">
             <CgImport className="me-2" /> Data Import
           </Link>
@@ -30,12 +30,13 @@ const Utilities = () => {
             <PiExportBold className="me-2" />  Data Export
           </Link>
         </Dropdown.Item>
+        {/* DropDwown button */}
         <DropdownButton variant="light" title={
-          <span>
-            <FcMultipleInputs className="me-2" />  Multi Edition
+          <span >
+            <FcMultipleInputs className="me-2" />  Multi Edition  
           </span>
         }>
-          <Dropdown.Item >
+          <Dropdown.Item>
             <Link to={`/${encodePath('utilitie')}`} className="d-inline-flex align-items-center text-dark text-decoration-none rounded ">
               <PiTextUnderlineBold className="me-2" />  Utilitie
             </Link>

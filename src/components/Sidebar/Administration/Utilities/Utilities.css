@@ -1,4 +1,4 @@
-@media (max-width: 926px) {
+@media (max-width:1042px) {
   .module-button {
      width: 40px;
       font-size: 11px;
@@ -9,7 +9,7 @@
       box-sizing: content-box;
   }
 }
-@media (max-width:770px) {
+@media (max-width:800px) {
   .module-button {
      width: 10px;
       font-size: 8px;

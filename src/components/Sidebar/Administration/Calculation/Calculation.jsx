@@ -4,7 +4,8 @@ import { encodePath } from '../../../../utilities/Utils';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { ImCalculator,ImParagraphCenter  } from "react-icons/im";
-import { TbTableExport ,TbTableImport } from "react-icons/tb";
+import { TbTableExport, TbTableImport } from "react-icons/tb";
+import "./Calculation.css";
 const Calculation = () => {
   const [activeSubMenu, setActiveSubMenu] = useState('');
 
@@ -16,7 +17,7 @@ const Calculation = () => {
       <DropdownButton
         variant='light' id="dropdown-basic-button"
         title={
-          <span>
+          <span className='module-button'>
             <ImCalculator className='me-2' />
             Calculation Module
           </span>

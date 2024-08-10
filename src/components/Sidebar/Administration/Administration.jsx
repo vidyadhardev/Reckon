@@ -28,7 +28,7 @@ const Administration = () => {
           </Link>
         </span>
         <div className={`collapse ms-1 mt-1  ${activeMenu === 'administration-collapse' ? 'show' : ''}`} id="administration-collapse">
-          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small dropdownList">
             <MainAdministrationNavigation />
             <UserModule />
             <Calculation />
