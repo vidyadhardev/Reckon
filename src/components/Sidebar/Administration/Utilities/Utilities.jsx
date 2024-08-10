@@ -15,7 +15,8 @@ const Utilities = () => {
   };
   return (
     <>
-      <DropdownButton variant="light" title={
+      <DropdownButton variant="light" id="dropdown-basic-button"
+        title={
         <span className="module-button ">
           <LuUtilityPole className="me-2" /> Utilities
         </span>

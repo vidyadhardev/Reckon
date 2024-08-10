@@ -15,18 +15,22 @@
   box-shadow: 1px 5px 10px 1px;
   transition: all ease-in-out .3s;
   padding: 10px;
-  margin-right: 2px;
-
 }
-@media (max-width: 726px) {
- .media{
-     width: 40px;
-      /* background-color: mediumvioletred; */
-      font-size: 10px;
+@media (max-width:1042px) {
+  .admin-Sub-button {
+      font-size: 11px;
       padding: 0px;
       margin: 0px;
       border-radius:0px;
-      box-sizing: border-box;
-      display:list-item;
+      box-sizing: content-box;
+  }
+}
+@media (max-width:770px) {
+  .admin-Sub-button {
+      font-size: 9px;
+      padding: 0px;
+      margin-right: -10px;
+      border-radius:0px;
+      box-sizing: content-box;
   }
 }

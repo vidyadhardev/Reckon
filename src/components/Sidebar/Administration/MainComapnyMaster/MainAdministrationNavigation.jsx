@@ -19,17 +19,17 @@ const MainAdministrationNavigation = () => {
         <div className="administration-module">
           <div>
             <span
-              className={`btn btn-toggle d-inline-flex align-items-center rounded border-2`}
+              className={`btn btn-toggle d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               onClick={() => handleMenuClick('firmMaster-collapse')}
               aria-expanded={activeMenu === 'firmMaster-collapse'}
             >
-              <Link to={`/${encodePath('fm-ms')}`} className="media text-decoration-none text-dark">
+              <Link to={`/${encodePath('fm-ms')}`} className=" text-decoration-none text-dark">
                 <RiAdminFill /> Firm Master
               </Link>
             </span>
           </div>
           <div>
-            <span className={`btn btn-toggle d-inline-flex align-items-center rounded border-2`}
+            <span className={`btn btn-toggle d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               onClick={() => handleMenuClick('FYBackUp-collapse')}
               aria-expanded={activeMenu === 'FYBackUp-collapse'}
             >
@@ -37,7 +37,7 @@ const MainAdministrationNavigation = () => {
             </span>
           </div>
           <div className="voucher-type module" >
-            <span className={`btn btn-toggle d-inline-flex align-items-center rounded border-2`}
+            <span className={`btn btn-toggle d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               onClick={() => handleMenuClick('Voucher-collapse')}
               aria-expanded={activeMenu === 'voucher-collapse'}
             >
@@ -45,7 +45,7 @@ const MainAdministrationNavigation = () => {
             </span>
           </div>
           <div className="sereis-type module" >
-            <span className={`btn btn-toggle d-inline-flex align-items-center rounded border-2`}
+            <span className={`btn btn-toggle d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               onClick={() => handleMenuClick('sereis-collapse')}
               aria-expanded={activeMenu === 'sereis-collapse'}
             >

@@ -13,7 +13,8 @@ const Configurations = () => {
 
   return (
     <>
-      <DropdownButton variant="light" title={
+      <DropdownButton variant="light"  id="dropdown-basic-button"
+        title={
         <span className="module-button">
           <GrDocumentConfig className="me-2" />
           Configuration
