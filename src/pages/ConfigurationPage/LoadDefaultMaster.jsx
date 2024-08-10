@@ -1,6 +1,7 @@
 import React from "react";
 import { Bounce } from "react-awesome-reveal";
-import {  Ratio } from "react-bootstrap";
+// import { Ratio } from "react-bootstrap";
+import LoadDefaultHero from "../../assets/Load_Default.png";
 const LoadDefaultMaster = () => {
  
   return (
@@ -9,9 +10,12 @@ const LoadDefaultMaster = () => {
         <div className="container mt-2">
           {/* <Bounce duration={2000} className="fw-bold fs-4"><center>Load Default Master</center></Bounce> */}
           <div className="container p-2 " >
-            <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
+            {/* <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
               <iframe container src="https://www.youtube.com/embed/T6rYzzw67qQ?si=Xv8WRd0f9RNcq-1z"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="d-inline xs" allowFullScreen style={{ border: "3px double rgb(123, 123, 241)", borderRadius: '5px', }}></iframe>
-            </Ratio>
+            </Ratio> */}
+            <div className="container justify-content-end align-items-end">
+            <img src={LoadDefaultHero} alt="firm-Herose" className="w-100 border border-danger-subtle rounded" height={"550px"} />
+          </div>
           </div>
           <hr />
           <div className="Voucher-page container">

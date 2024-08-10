@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Bounce } from "react-awesome-reveal";
+import { Bounce } from "react-awesome-reveal";
 import Ratio from 'react-bootstrap/Ratio';
 import HomeImage from "../../assets/Reckon_Home.png"
 import './Home.css';
@@ -9,7 +9,6 @@ const Home = () => {
     <div className='home-content mt-3'>
       <div className=" mt-3">
         <div className="justify-content-center text-center me-auto p-3 ifrem-container ">
-          <p className="justify-content-center align-content-center ">Home Page</p>
           <div className="container">
             <Ratio aspectRatio={('16x9', '21x9')}>
               <iframe
@@ -30,9 +29,9 @@ const Home = () => {
         <div className="home-page container">
           <p className="p-lg-5 justify-content-end ms-5 me-5 fs-5">
             <div className="container-image">
-              <Fade duration={3000} direction="right" className="fw-bold">
+              <Bounce duration={3000} className="text-decoration-underline fw-bold">
                 Why To Use Reckon Only ?
-              </Fade>
+              </Bounce>
               <p>
                 <b>Reckon</b>
                 &nbsp; is your ultimate solution for effortless and efficient accounting. Designed for businesses of all sizes, our software ensures you have everything you need to manage your finances seamlessly.

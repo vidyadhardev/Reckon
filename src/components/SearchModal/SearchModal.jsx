@@ -18,9 +18,9 @@ const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filter
   return (
     <div>
       <Modal className='small mt-5' show={show} onHide={handleClose} style={{ maxHeight: "500px", borderRadius: "5px" }}>
-        <Modal.Header >
+        <Modal.Header closeButton>
         </Modal.Header>
-        <Modal.Body closeButton>
+        <Modal.Body >
           <Form role='search'>
           <Form.Control
             type="text"

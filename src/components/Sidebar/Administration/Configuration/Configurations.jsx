@@ -30,7 +30,9 @@ const Configurations = () => {
             System Config
           </span>
         }>
+          
           <SystemConfiguration />  {/* System Configuration page added here */}
+
         </DropdownButton>
         <DropdownButton variant="light" title={
           <span>

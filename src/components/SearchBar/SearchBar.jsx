@@ -39,15 +39,15 @@ const SearchBar = () => {
           <Link to="https://reckonsales.in/" title="Navigate Reckon Sales Web App" className="d-block align-items-center ps-2 text-decoration-none">
             <img src="logo.png" alt='Reckon Image' width="40px" className='rounded bg-info' />
           </Link>
-          <Navbar.Collapse id="navbarScroll" className='justify-content-center'>
+          <Navbar.Collapse id="navbarScroll" className='justify-content-center ms-lg-5'>
             <Form.Control
               type="text"
               // value={input}
               // onChange={handleSearchChange}
               onClick={handleSearchClick}
               placeholder="Click And Search ..."
-              className='search-input border border-primary-subtle'
-              style={{ width: "350px" }}
+              className='search-input border border-primary-subtle ms-5'
+              style={{ width: "450px" }}
               readOnly
             />
           </Navbar.Collapse>

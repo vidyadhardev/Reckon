@@ -42,13 +42,11 @@ const SubNavigation = () => {
   //   window.addEventListener('resize', handleResize);
   //   return () => window.removeEventListener('resize', handleResize);
   // }, []);
-
   return (
     <BrowserRouter>
+      <div className="container-fluid ">
       <SearchBar />
-      <div className="container-fluid">
         <div className="row flex-nowrap">
-          {/* {isMobile ? <SideBarMobileLayout /> : <SideBar />} */}
           <div className='col-2 side-bar'>
             <SideBar />
           </div>
@@ -88,5 +86,4 @@ const SubNavigation = () => {
     </BrowserRouter>
   );
 }
-
 export default SubNavigation;

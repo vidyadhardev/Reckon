@@ -1,17 +1,19 @@
 import React  from "react";
-import { Bounce } from "react-awesome-reveal";
-import {   Ratio } from "react-bootstrap";
+// import {   Ratio } from "react-bootstrap";
+import OldSysHero from '../../../assets/control_para.png'
 // import './OldSystemConfig.css'
 const OldSystemConfig = () => {
  
   return (
     <div className='module-content mt-2 voucher-content ' style={{ border: "3px double black", borderRadius: '5px', }}>
       <div className="container mt-2">
-        <Bounce duration={2000} className="fw-bold fs-4 " ><center> Old System Config</center></Bounce>
         <div className="container p-2" >
-          <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
+          {/* <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
             <iframe container src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay=" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="d-inline xs" allowFullScreen style={{ border: "3px double rgb(123, 123, 241)", borderRadius: '5px', }}></iframe>
-          </Ratio>
+          </Ratio> */}
+          <div className="container justify-content-end align-items-end">
+            <img src={OldSysHero} alt="firm-Herose" className="w-100 border border-danger-subtle rounded" height={"650px"} />
+          </div>
         </div>
         <hr />
         <div className="Voucher-page container">
