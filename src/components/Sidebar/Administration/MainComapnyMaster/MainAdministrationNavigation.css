@@ -1,0 +1,20 @@
+.MainAdministrationNavigation-sub-module {
+  /* border: 2px solid rgb(123, 123, 241); */
+  transition: all ease-in-out .3s;
+  padding: 10px;
+  margin-right: 2px;
+  border-radius: 5px;
+  margin-top: 2px;
+  
+}
+
+.MainAdministrationNavigation-sub-module:hover {
+  border: 2px solid rgb(123, 123, 241);
+  background-color: #fffeef;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 1px;
+  transition: all ease-in-out .3s;
+  padding: 10px;
+  margin-right: 2px;
+
+}

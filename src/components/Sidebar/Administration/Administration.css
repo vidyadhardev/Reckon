@@ -1,0 +1,44 @@
+.administration-header {
+  /* border: 2px solid rgb(123, 123, 241); */
+  transition: all ease-in-out .8s;
+  padding: 10px;
+  margin-right: 2px;
+   box-sizing: border-box;
+}
+
+.administration-header:hover {
+  border: 2px solid rgb(123, 123, 241);
+  /* background-color: #fffeef; */
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 1px;
+  transition: all ease-in-out .5s;
+  padding: 10px;
+  margin-right: 2px;
+
+}
+/* Onlu=y Adminstration Button Apply */
+@media (max-width: 576px) {
+  .administration-header {
+     width: 40px;
+      background-color: mediumvioletred;
+      font-size: 9px;
+      padding: 0px;
+      margin: 0px;
+      border-radius:0px;
+      box-sizing: content-box;
+  }
+}
+
+/* @media(min-width:'480px') {
+  .admin-fix{
+    width: 20px;
+    padding: 0%;
+    transition:all ease 0.9s;
+    margin: 0%;
+    background-color: blue !important;
+    color: yellow;
+    overflow: scroll;
+
+  }
+  
+} */

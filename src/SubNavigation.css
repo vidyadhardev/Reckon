@@ -1,0 +1,9 @@
+
+@media (max-width:'576px') {
+  .all-page-fix{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+}
