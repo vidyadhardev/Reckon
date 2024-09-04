@@ -1,0 +1,10 @@
+.card-body{
+  filter: grayscale(0%);
+  transition: all ease0.4s;
+}
+.card-body:hover{
+  filter: grayscale(30%);
+    /* filter: saturate(3); */
+  filter: hue-rotate(30deg);
+  transition: all ease 0.4s;
+}

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="row Footer-header p-3 rounded mt-3 mb-3">
-        <div className="col-sm-4 "> <dt>About</dt>
+        <div className="col-sm-4 "> <dt>Address</dt>
           <div className="address">
             <ul className="list-unstyled">
               <li className="text-decoration-none">SF-2, New Medicine Market,<br /> Meer Jaan Lane,
@@ -23,7 +23,7 @@ const Footer = () => {
           <div>
             <ul className="list-unstyled">
               <li>
-                <MdEmail />  admin@reckonsales.com
+                <MdEmail />  support@reckonsales.com
               </li>
             </ul>
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="col-sm-4"><dt>Subscribe E-mail</dt>
           <div className="E-mail contain ">
             <form className="col-md-12  d-flex mb-lg-0 ">
-              <input type="email" className="form-control w-100" placeholder=" Enter Your Emaiml .." />
+              <input type="email" className="form-control w-100" placeholder=" Enter Your Email .." />
               <button type="submit" className="btn btn-outline-primary" title="Send">Send</button>
             </form>
           </div>

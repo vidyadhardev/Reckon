@@ -1,35 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { GiDemolish } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
+import { encodePath } from '../../utilities/Utils';
 import Administration from "./Administration/Administration";
-// import Order from "./Order/Order";
-// import Inventory from "./Inventory/Inventory";
-import Master from './Master/Master';
-// import Dispatch from './Dispatch/Dispatch';
-// import OnLineBanking from './OnlineBanking/OnlineBanking';
-// import GST from './GST/GST';
-// import StockReport from './StockReport/StockReport';
-// import Report from './Report/Report';
-// import Fevorites from './Fevorietes/Fevorites';
-// import Account from './Account/Account';
-import './SideBar.css'
+import UserModule from './UserModule/UserModule';
+import UtilitiesSidebar from './UtilitiesSidebar/UtilitiesSidebar';
+import MergeModule from './MergeModule/MergeModule';
+import ReUpdateModule from './ReUpdateModule/ReUpdateModule';
+import AccountMaster from './AccountMaster/AccountMaster';
+import Installation from './Installation/Installation';
+import ReckonDemo from './ReckonDemo/ReckonDemo';
+import './SideBar.css';
+import { FaAccusoft } from 'react-icons/fa6';
 const SideBar = () => {
-
+  const [activeMenu, SetActiveMenu] = useState('');
+  const handleMenuClick = (menuId) => {
+    SetActiveMenu(activeMenu === menuId ? '' : menuId);
+  }
   return (
-    <div className=' bg-light fix-sidebar' style={{
-      minWidth: '90px', maxWidth: '355px',
-      minHeight: "750px", 
-    }}>
-      <ul className="list-unstyled ps-1 border-top fix-top-sidebar">
-        <Administration />
-         <Master />
-      {/*  <Order />
-        <Inventory />
-        <Dispatch />
-        <OnLineBanking />
-        <GST />
-        <StockReport />
-        <Report />
-        <Fevorites />
-        <Account /> */}
+    <div className=' sidebar w-auto'>
+      <ul className="list-unstyled fix-top-sidebar ">
+        {/* Reckon Demo Videos */}
+        <li className="">
+          <span
+            className={`btn btn-toggle d-inline-flex align-items-center rounded border-info border-2 fw-bold reckon-header w-100 mb-2 mt-2 ${activeMenu === 'reckon-demo-collapse' ? '' : 'collapsed'}`}
+            onClick={() => handleMenuClick('reckon-demo-collapse')}
+            aria-expanded={activeMenu === 'reckon-demo-collapse'}
+          >
+            <FaAccusoft className="me-2" />Reckon Demo
+          </span>
+          <div className={`collapse ps-2 ${activeMenu === 'reckon-demo-collapse' ? 'show' : ''}`} id="reckon-demo-collapse">
+            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <ReckonDemo />
+            </ul>
+          </div>
+        </li>
+        {/* Reckon Installetion */}
+        <Installation />
+        {/* All Module Under Reckon Demo */}
+        <li className="">
+          <span
+            className={`btn btn-toggle d-inline-flex align-items-center rounded border-info border-2 fw-bold reckon-header w-100 mb-2 mt-2 ${activeMenu === 'reckon-software-collapse' ? '' : 'collapsed'}`}
+            onClick={() => handleMenuClick('reckon-software-collapse')}
+            aria-expanded={activeMenu === 'reckon-software-collapse'}
+          >
+            <FaAccusoft className="me-2" />Reckon Software
+                    </span>
+          <div className={`collapse ps-2 ${activeMenu === 'reckon-software-collapse' ? 'show' : ''}`} id="reckon-software-collapse">
+            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <Administration />
+              <UserModule />
+              <UtilitiesSidebar />
+              <MergeModule />
+              <ReUpdateModule />
+              <AccountMaster />
+ </ul>
+          </div>
+        </li>
       </ul>
     </div>
   );

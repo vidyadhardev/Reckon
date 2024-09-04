@@ -1,28 +1,28 @@
 import React from "react";
 import { Bounce } from "react-awesome-reveal";
-import Ratio from 'react-bootstrap/Ratio';
+// import Ratio from 'react-bootstrap/Ratio';
 import HomeImage from "../../assets/Reckon_Home.png"
 import './Home.css';
 
 const Home = () => {
+  // #0dcaf0  
   return (
-    <div className='home-content mt-3'>
-      <div className=" mt-3">
-        <div className="justify-content-center text-center me-auto p-3 ifrem-container ">
-          <div className="container">
-            <Ratio aspectRatio={('16x9', '21x9')}>
+    <div className='home-content mt-3 ' style={{ border: "3px double black", borderRadius: '5px', background: 'white' }}>
+      <div className="home-heading">                          
+        <div className="container justify-content-around align-items-center w-75 mt-3">
+          <div className="container justify-content-between align-items-center">
+            <div className=" ratio ratio-16x9">
               <iframe
-                container
                 src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay="
                 title="YouTube video player"
-                frameBorder="1"
+                frameborder="1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                className="d-inline xs"
-                allowFullScreen
-                style={{ border: "3px double rgb(123, 123, 241)", borderRadius: '5px' }}>
+                referrerpolicy="strict-origin-when-cross-origin"
+                class="d-inline xs"
+                allowfullscreen
+                style={{ border: "3px double rgb(123, 123, 241)", borderRadius: "5px" }}>
               </iframe>
-            </Ratio>
+            </div>
           </div>
         </div>
         <hr />
@@ -107,6 +107,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

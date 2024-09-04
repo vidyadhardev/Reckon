@@ -1,5 +1,9 @@
-.MainAdministrationNavigation-sub-module {
-  /* border: 2px solid rgb(123, 123, 241); */
+.admin-home{
+  box-sizing: border-box;
+}
+
+/* .MainAdministrationNavigation-sub-module {
+ 
   transition: all ease-in-out .3s;
   padding: 10px;
   margin-right: 2px;
@@ -15,7 +19,7 @@
   box-shadow: 1px 5px 10px 1px;
   transition: all ease-in-out .3s;
   padding: 10px;
-}
+} */
 @media (max-width:1042px) {
   .admin-Sub-button {
       font-size: 11px;
