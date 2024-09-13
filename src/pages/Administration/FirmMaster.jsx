@@ -9,12 +9,12 @@ const FirmMaster = () => {
         <div className="home-heading">
           <center>  Favourite Menu Entry </center>
           <div className="main-company-images text-center">
-          <div className="image-contain mb-3 m-auto">
-            <div style={{ minHeight: '250px' }} className="m-auto">
-              <img src={FirmLogo} alt="home" className="img-fluid w-75 h-50" style={{ border: "3px double #8266e7", borderRadius: '5px' }} />
+            <div className="image-contain mb-3 m-auto">
+              <div style={{ minHeight: '250px' }} className="m-auto">
+                <img src={FirmLogo} alt="home" className="img-fluid w-75 h-50" style={{ border: "3px double #8266e7", borderRadius: '5px' }} />
+              </div>
             </div>
           </div>
-        </div>
           <hr />
           <div className="home-page container">
             <p className=" p-lg-5 justify-content-end ms-5 me-5 fs-5" >

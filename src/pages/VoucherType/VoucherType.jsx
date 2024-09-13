@@ -7,7 +7,6 @@ const VoucherType = () => {
   return (
     <div className='module-content mt-2 voucher-content ' style={{ border: "3px double black", borderRadius: '5px', }}>
       <div className="container mt-2">
-        {/* <Bounce duration={2000} className="fs-3"><center>Voucher Types </center></Bounce> */}
         <div className="container p-2 " >
           <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
             <iframe container src="https://www.youtube.com/embed/TwHItJegntI?si=Xrl10ZJ6prcJx1_d" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="d-inline xs" allowFullScreen style={{ border: "3px double rgb(123, 123, 241)", borderRadius: '5px', }}></iframe>
@@ -39,24 +38,6 @@ const VoucherType = () => {
             </ul>
           </p>
         </div>
-        {/* <hr />
-        <div className="main-company-images  text-center ">
-          <div className="image-contain mb-3 m-auto">
-            <p>If you want to see image then <b>click</b> on press button</p>
-            <Button
-              onClick={() => setOpen(!open)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open}
-            >
-              click
-            </Button>
-            <div style={{ minHeight: '250px' }} className="m-auto">
-              <Collapse in={open} dimension="width" direction="">
-                <img src="../Images/Capture1.PNG" alt="FimrMaster" className="img-fluid" style={{ border: "3px double #8266e7", borderRadius: '5px', }} />
-              </Collapse>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

@@ -20,20 +20,8 @@ const MergeModule = () => {
             <FaModx className="me-1" /> Merge Module
           </span>
           <div className={`collapse ps-2 ${activeMenu === 'merg-module-collapse' ? 'show' : ''}`} id="merg-module-collapse">
-            {/* <div>
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-1`}
-              >
-                <Link to={`/${encodePath('merge-item-module')}`} className="media text-decoration-none text-dark"> Merge Item Module</Link>
-              </span>
-            </div>
-            <div>
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-ledger-module')}`} className="media text-decoration-none text-dark"> Merge Ledger Module</Link>
-              </span>
-            </div> */}
             <div className="voucher-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
+              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-2`}
               >
                 <Link to={`/${encodePath('merge-item')}`} className="media text-decoration-none text-dark"> Merge Item</Link>
               </span>
@@ -71,7 +59,6 @@ const MergeModule = () => {
             <div className="sereis-type module" >
               <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               >
-                {/* Transfer Stack And ledger Balance */}
                 <Link to={`/${encodePath('merge-location')}`} className="media text-decoration-none text-dark"> Merge Location </Link>
               </span>
             </div>
@@ -132,7 +119,7 @@ const MergeModule = () => {
             <div className="sereis-type module" >
               <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               >
-                {/* Transfer Stack And ledger Balance */}
+             
                 <Link to={`/${encodePath('merge-sales-man')}`} className="media text-decoration-none text-dark"> Merge Sales Man </Link>
               </span>
             </div>
@@ -175,7 +162,7 @@ const MergeModule = () => {
             <div className="sereis-type module" >
               <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
               >
-                {/* Transfer Stack And ledger Balance */}
+          
                 <Link to={`/${encodePath('merge-bank')}`} className="media text-decoration-none text-dark"> Merge Bank </Link>
               </span>
             </div>

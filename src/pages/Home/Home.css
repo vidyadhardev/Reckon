@@ -29,7 +29,7 @@
   filter: grayscale(0%);
 }
 /* Using Media Query for responsive */
-@media all and (max-width: 765px) {
+@media (max-width: 765px) {
   .container,
   .home-page,
   .iframe-container {

@@ -9,7 +9,7 @@ const ReckonInstallation = () => {
             <h2> Working On This Page</h2>
           </div>
           <p className='text-para mt-3'>
-           <h3> Reckon Instalation</h3>
+            <h3> Reckon Instalation</h3>
           </p>
         </div>
       </div>

@@ -55,8 +55,6 @@ const UserModuleEntry = () => {
                 2) Save the new user entry.
                 The system may automatically send an email notification to the user with instructions on how to log in.
               </li>
-
-
             </ul>
           </p>
           <div>

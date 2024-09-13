@@ -11,10 +11,8 @@
 .image-contain img {
   height: 400px;
   width: 550px;
-  /* border: 2px solid #8266e7; */
   border-radius: 8px;
   transition: all ease-in-out .5s;
-  /* filter: blur(1.5px); */
   border-radius: 10px;
 }
 

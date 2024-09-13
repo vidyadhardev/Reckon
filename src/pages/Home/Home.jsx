@@ -1,17 +1,16 @@
 import React from "react";
 import { Bounce } from "react-awesome-reveal";
-// import Ratio from 'react-bootstrap/Ratio';
-import HomeImage from "../../assets/Reckon_Home.png"
+import HomeImage from "../../assets/Home.jpeg"
 import './Home.css';
 
 const Home = () => {
-  // #0dcaf0  
   return (
     <div className='home-content mt-3 ' style={{ border: "3px double black", borderRadius: '5px', background: 'white' }}>
-      <div className="home-heading">                          
-        <div className="container justify-content-around align-items-center w-75 mt-3">
+      <div className="home-heading">
+        <div className="container justify-content-around align-items-center w-100  mt-5">
           <div className="container justify-content-between align-items-center">
-            <div className=" ratio ratio-16x9">
+            <img src={HomeImage} alt="background logo" width="100%" style={{ height: "500px" }} className="rounded" />
+            {/* <div className=" ratio ratio-16x9">
               <iframe
                 src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay="
                 title="YouTube video player"
@@ -22,7 +21,8 @@ const Home = () => {
                 allowfullscreen
                 style={{ border: "3px double rgb(123, 123, 241)", borderRadius: "5px" }}>
               </iframe>
-            </div>
+             
+            </div> */}
           </div>
         </div>
         <hr />
@@ -99,15 +99,14 @@ const Home = () => {
           <div>
           </div>
         </div>
-        <hr />
+        {/* <hr />
         <div className="main-company-images text-center">
           <div className="image-contain mb-3 m-auto">
             <div style={{ minHeight: '250px' }} className="m-auto">
               <img src={HomeImage} alt="home" className="img-fluid w-75 h-75" style={{ border: "3px double #8266e7", borderRadius: '5px' }} />
             </div>
           </div>
-        </div>
-
+        </div> */}
       </div>
     </div>
   );

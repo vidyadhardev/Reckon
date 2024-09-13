@@ -1,6 +1,4 @@
 import React from "react";
-// import { Ratio } from "react-bootstrap";
-// import { Bounce } from "react-awesome-reveal";
 const UserSeriesRightsEntry = () => {
 
   return (

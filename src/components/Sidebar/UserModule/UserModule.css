@@ -1,10 +1,7 @@
 .user-module-header {
   transition: all ease-in-out .8s;
-  padding: 10px;
   margin-right: 2px;
-   
 }
-
 .user-module-header:hover {
   border: 2px solid rgb(123, 123, 241);
   background-color: #fffeef;
@@ -13,5 +10,4 @@
   transition: all ease-in-out .5s;
   padding: 10px;
   margin-right: 2px;
- 
 }

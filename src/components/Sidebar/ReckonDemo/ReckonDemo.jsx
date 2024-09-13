@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './ReckonDemo.css';
 import { encodePath } from '../../../utilities/Utils';
 const ReckonDemo = () => {
-  // const [activeMenu, setActiveMenu] = useState();
-  // const handleMenuClick = (menuId) => (
-  //   setActiveMenu(activeMenu === menuId ? '' : menuId)
-  // )
+
   return (
     <>
       <div className="admin-home sidebar mt-1">
@@ -23,7 +20,7 @@ const ReckonDemo = () => {
             <Link to={`/${encodePath('chemist-shop-software')}`} className="media text-decoration-none ">
               <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
               >
-                Chemist Shop Software
+                Chemist Shop
               </span>
             </Link>
           </div>
@@ -39,7 +36,7 @@ const ReckonDemo = () => {
             <Link to={`/${encodePath('garment-sootwear-software')}`} className="media text-decoration-none ">
               <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
               >
-                Garment,Footwear
+                Garments & Footwear
               </span>
             </Link>
           </div>
@@ -47,7 +44,7 @@ const ReckonDemo = () => {
             <Link to={`/${encodePath('mobile-electronics-software')}`} className="media text-decoration-none ">
               <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
               >
-                Mobile,Electronics
+                Mobile & Electronics
               </span>
             </Link>
           </div>

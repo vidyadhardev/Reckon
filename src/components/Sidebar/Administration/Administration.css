@@ -1,17 +1,38 @@
 
 .administration-header {
   transition: all ease-in-out .8s;
-  padding: 10px;
   margin-right: 2px;
    box-sizing: border-box;
 }
 .administration-header:hover {
   border: 2px solid rgb(77, 216, 238);
   border-radius: 5px;
+  padding: 10px;
   background-color: white;
   box-shadow: 1px 5px 10px 1px;
   transition: all ease-in-out .5s;
   margin-right: 2px;
+}
+.admin-home{
+  box-sizing: border-box;
+}
+/* @media (max-width:1042px) {
+  .admin-Sub-button {
+      font-size: 11px;
+      padding: 0px;
+      margin: 0px;
+      border-radius:0px;
+      box-sizing: content-box;
+  }
+}
+@media (max-width:770px) {
+  .admin-Sub-button {
+      font-size: 9px;
+      padding: 0px;
+      margin-right: -10px;
+      border-radius:0px;
+      box-sizing: content-box;
+  }
 }
 @media all and (max-width:1024px) {
   .administration-header {
@@ -32,4 +53,4 @@
   .administration-header {
       font-size: 6px;   
   }
-}
+} */

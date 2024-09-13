@@ -1,25 +1,18 @@
 import React from "react";
-// import { Button, Collapse, Ratio } from "react-bootstrap";
 import FirmHerose from "../../assets/FirmImage2.png"
-// import { Bounce } from "react-awesome-reveal";
 import './FirmMaster.css'
 const FirmMaster = () => {
  
   return (
     <div className='firm-content mt-2 voucher-content ' style={{ border: "3px double black", borderRadius: '5px', }}>
       <div className="container mt-2">
-        {/* <Bounce duration={2000} className="fs-3"><center>Firm Master</center></Bounce> */}
         <div className="container p-2 " >
-          {/* <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
-            <iframe container src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay=" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="d-inline xs" allowFullScreen style={{ border: "3px double rgb(123, 123, 241)", borderRadius: '5px', }}></iframe>
-          </Ratio> */}
           <div className="container justify-content-end align-items-end">
             <img src={FirmHerose} alt="firm-Herose" className="w-100 border border-danger-subtle rounded" height={"650px"} />
           </div>
         </div>
         <hr />
         <div className="Voucher-page container">
-         
           <p className=" p-lg-5 justify-content-end ms-5 me-5 fs-5" >
           <b>
             <p>Firm Master -:  </p>
@@ -46,24 +39,6 @@ const FirmMaster = () => {
             </ul>
           </p>
         </div>
-        {/* <hr/>
-        <div className="main-company-images  text-center ">
-          <div className="image-contain mb-3 m-auto">
-            <p>If you want to see image then <b>click</b> on press button</p>
-            <Button
-              onClick={() => setOpen(!open)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open}
-            >
-              click
-            </Button>
-            <div style={{ minHeight: '250px' }} className="m-auto">
-              <Collapse in={open} dimension="width" direction="">
-                <img src="../Images/BackgroundImages/Futuristicconceptwithdrone.jpeg" alt="FimrMaster" className="img-fluid" style={{ border: "3px double black", borderRadius: '5px', }} />
-              </Collapse>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

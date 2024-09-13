@@ -3,8 +3,6 @@
   transition: all ease0.4s;
 }
 .card-body:hover{
-  filter: grayscale(30%);
-    /* filter: saturate(3); */
-  filter: hue-rotate(30deg);
+  filter: grayscale(100%);
   transition: all ease 0.4s;
 }

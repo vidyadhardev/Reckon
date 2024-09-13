@@ -42,7 +42,6 @@ const TransferNextYear = () => {
                   </ul>
                 </p>
               </div>
-
             </p>
             <div>
             </div>

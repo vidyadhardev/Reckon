@@ -2,7 +2,7 @@ import React from 'react'
 
 const DownloadControlFile = () => {
   return (
-  
+
     <>
       <div className='fy-content mt-2'>
         <div className="container mt-3" style={{ border: "3px double black", borderRadius: '5px', }}>
@@ -27,8 +27,8 @@ const DownloadControlFile = () => {
         </div>
       </div>
     </>
- 
-     
+
+
   )
 }
 

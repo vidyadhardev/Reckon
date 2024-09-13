@@ -19,7 +19,7 @@ const ReUpdateModule = () => {
           >
             <FaMegaport className="me-1" /> ReUpdate Module
           </span>
-          <div className={`collapse ps-3 ${activeMenu === 're-update-collapse' ? 'show' : ''}`} id="re-update-collapse">
+          <div className={`collapse ps-2 ${activeMenu === 're-update-collapse' ? 'show' : ''}`} id="re-update-collapse">
             <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
               <div>
                 <span
@@ -70,8 +70,8 @@ const ReUpdateModule = () => {
                 <span
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
-                  <Link to={`/${encodePath('off-line-production-entry-generation-from-sale')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  OffLineProductionEntry<br/>GenerationFromSale
+                  <Link to={`/${encodePath('generation-production-entry')}`} className="d-inline-flex text-dark text-decoration-none rounded">
+                  GenerateProductionEntry
                   </Link>
                 </span>
               </div>

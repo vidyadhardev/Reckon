@@ -1,0 +1,13 @@
+.sale-return-header {
+  transition: all ease-in-out .8s;
+  margin-right: 2px;
+}
+.sale-return-header:hover {
+  border: 2px solid rgb(123, 123, 241);
+  background-color: #fffeef;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 1px;
+  transition: all ease-in-out .5s;
+  padding: 10px;
+  margin-right: 2px;
+}

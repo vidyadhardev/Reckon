@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FaJediOrder } from 'react-icons/fa';
-import { Fa500Px, FaGlobe, FaSync, FaBuilding, FaThList, FaEllipsisH } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { encodePath } from '../../../utilities/Utils';
 import './UtilitiesSidebar.css';
@@ -20,18 +19,9 @@ const UtilitiesSidebar = () => {
           >
             <FaJediOrder className="me-2" /> Utilities
           </span>
-          <div className={`collapse ${activeMenu === 'Utilities-collapse' ? 'show' : ''}`} id="Utilities-collapse">
-            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-              {/* <div>
-                <span
-                  className={`btn btn-outline-info mt-2 w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-1`}
-                >
-                  <Link to={`/${encodePath('re-update')}`} className="text-dark text-decoration-none rounded">
-                    ReUpdate Module
-                  </Link>
-                </span>
-
-              </div> */}
+          <div className={`collapse ps-2 ${activeMenu === 'Utilities-collapse' ? 'show' : ''}`} id="Utilities-collapse">
+            <ul className="btn-toggle-nav list-unstyled fw-normal small ">
+             
               <div className='mt-2'>
                 <span
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
@@ -64,7 +54,7 @@ const UtilitiesSidebar = () => {
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
                   <Link to={`/${encodePath('import-import-method')}`} className=" text-dark text-decoration-none rounded">
-                  Import Purchase Method
+                  ImportPurchaseMethod
                   </Link>
                 </span>
               </div>
@@ -89,7 +79,7 @@ const UtilitiesSidebar = () => {
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
                   <Link to={`/${encodePath('non-working-ledger')}`} className=" text-dark text-decoration-none rounded">
-                  Lock Non-Working Ledger
+                  Non-WorkingLedger
                   </Link>
                 </span>
               </div>
@@ -143,7 +133,7 @@ const UtilitiesSidebar = () => {
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
                   <Link to={`/${encodePath('update-gst-in-detail-account')}`} className=" text-dark text-decoration-none rounded">
-                    UpdateGSTDetailInAccount
+                    UpdateGSTDetailInAcc.
                   </Link>
                 </span>
               </div>

@@ -3,21 +3,29 @@ import React from 'react'
 const MobileElectronicsSoftware = () => {
   return (
     <>
-      <div className='row card-body ms-0 me-0 mt-3 mb-3 border-2 border border-black rounded'>
-          <div className='col-sm-3 card-header-tabs mx-3 my-3  ' >
-          <iframe
-            src="https://www.youtube.com/embed/9KWbw_uoinI?si=bz-3qDexdkb4-xhC" 
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              className='rounded pill border-2 border border-black'
-            >
-            </iframe>
+      <div className='home-content mt-3 ' style={{ border: "3px double black", borderRadius: '5px', background: 'white' }}>
+        <div className="home-heading">
+          <div className="container justify-content-around align-items-center w-75 mt-3">
+            <div className="container justify-content-between align-items-center">
+              <h3> <center className=' mb-4'> Mobile & Electronics </center></h3>
+              <div className=" ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/9KWbw_uoinI?si=bz-3qDexdkb4-xhC"
+                  title="YouTube video player"
+                  frameborder="1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  class="d-inline xs"
+                  allowfullscreen
+                  style={{ border: "3px double rgb(123, 123, 241)", borderRadius: "5px" }}>
+                </iframe>
+              </div>
+            </div>
           </div>
-          <div className='col-sm-8 ms-3'>
-       MobileElectronicsSoftware
-          </div>
+          <br />
+          <hr />
         </div>
+      </div>
     </>
   )
 }

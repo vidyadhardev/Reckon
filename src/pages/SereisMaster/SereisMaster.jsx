@@ -1,18 +1,9 @@
 import React from "react";
-import { Bounce } from "react-awesome-reveal";
-// import { Button, Collapse, Ratio } from "react-bootstrap";
 import SereisHerose from "../../assets/SeriesMasterHome.png";
-// import './SereisMaster.css'
 const SereisMaster = () => {
   return (
     <div className='module-content mt-2 voucher-content ' style={{ border: "3px double black", borderRadius: '5px', }}>
       <div className="container mt-3">
-        {/* <Bounce><center className="para fs-3 mb-2">Sereis Master</center></Bounce> */}
-        {/* <div className="container p-5 " >
-          <Ratio aspectRatio={('1x1', '4x3', '16x9', '21x9')}>
-            <iframe container src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay=" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="d-inline xs" allowFullScreen style={{ border: "3px double rgb(123, 123, 241)", borderRadius: '5px', }}></iframe>
-          </Ratio>
-        </div> */}
         <div className="container justify-content-center align-content-center ">
           <img src={SereisHerose} alt="series_MasterLogo" className="w-100 border border-danger-subtle rounded" />
         </div>

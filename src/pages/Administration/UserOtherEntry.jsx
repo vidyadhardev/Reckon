@@ -1,8 +1,6 @@
 import React from "react";
-import { Ratio } from "react-bootstrap";
 
 const UserOtherEntry = () => {
-
   return (
     <>
       <div className='home-content mt-3 ' style={{ border: "3px double black", borderRadius: '5px', background: 'white' }}>

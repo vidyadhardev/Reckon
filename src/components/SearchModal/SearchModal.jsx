@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Modal, Form } from 'react-bootstrap';
 import { encodePath } from '../../utilities/Utils';
-import "./SearchModal.css";
-
+import "./Searchmodal.css";
 const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filteredItems, setReDirect }) => {
   const [activeIndex, setActiveIndex] = useState(-1);
-  const itemRefs = useRef([]); // Create a ref for each item
+  const itemRefs = useRef([]);
 
   const handlectRedirect = (path) => {
     setReDirect({
@@ -36,12 +35,12 @@ const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filter
     } else if (event.key === 'ArrowUp') {
       setActiveIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : filteredItems.length - 1));
     } else if (event.key === 'Enter' && activeIndex >= 0) {
-      event.preventDefault(); // Prevent default behavior on "Enter" key press
+      event.preventDefault();
       handlectRedirect(filteredItems[activeIndex].path);
       handleClose();
     }
   };
-  
+
 
   return (
     <div>
@@ -55,7 +54,7 @@ const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filter
               onChange={handleSearchChange}
               placeholder="Search..."
               autoFocus
-              onKeyDown={handleKeyDown}  // Add onKeyDown event handler
+              onKeyDown={handleKeyDown}
               className='border-2 border-info'
             />
           </Form>
@@ -63,18 +62,17 @@ const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filter
             {searchTerm && filteredItems.map((item, index) => (
               <li
                 key={index}
-                ref={el => itemRefs.current[index] = el} // Assign the ref to each item
-                className={`list-unstyled m-2 ${index === activeIndex ? 'active' : ''}`} // Apply active class
-                onClick={() =>
-                {
-              
+                ref={el => itemRefs.current[index] = el}
+                className={`list-unstyled m-2 ${index === activeIndex ? 'active' : ''}`}
+                onClick={() => {
+
                   handlectRedirect(item.path); handleClose();
                 }}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', }}
               >
                 <p className='FetchDataLocal text-primary-emphasis text-capitalize'>
                   {item.name}
-                  <li className='list-unstyled border-bottom border-dark'/> 
+                  <li className='list-unstyled border-bottom border-dark' />
                 </p>
               </li>
             ))}

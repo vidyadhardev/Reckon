@@ -18,9 +18,9 @@ const AccountMaster = () => {
           >
             <FaAdn className="me-2" /> Account Master 
           </span>
-          <div className={`collapse ps-3 mt-1 ${activeMenu==='account-master-collapse'? 'show':''}`} id="Utilities-collapse">
+          <div className={`collapse ps-2 mt-1 ${activeMenu==='account-master-collapse'? 'show':''}`} id="Utilities-collapse">
           <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-              <div>
+              {/* <div>
                 <span
                   className={`btn btn-outline-info mt-2 w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-1`}
                 >
@@ -28,13 +28,13 @@ const AccountMaster = () => {
                   Ledger Master
                   </Link>
                 </span>
-              </div>
+              </div> */}
               <div>
                 <span
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
                   <Link to={`/${encodePath('acc-group')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  A/c Group
+                  Account Group
                   </Link>
                 </span>
               </div>
@@ -70,7 +70,7 @@ const AccountMaster = () => {
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
                   <Link to={`/${encodePath('ledger-opening-master')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  LedgerOpening(Master)
+                  LedgerOpening
                   </Link>
                 </span>
               </div>
@@ -79,7 +79,7 @@ const AccountMaster = () => {
                   className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
                 >
                   <Link to={`/${encodePath('-approve-retailer-reckonOnly')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  Appr.Retailer(ReckonOr.)
+                  Approve Retailers
                   </Link>
                 </span>
               </div>

@@ -8,7 +8,7 @@ const MergeAcGroup = () => {
           <div className="home-page container">
             <p className=" p-lg-5 justify-content-end ms-5 me-5 fs-5" >
               <div className="Voucher-page container">
-              <center> Merge Acc Group</center>
+                <center> Merge Acc Group</center>
                 <p>
                   <b className="fw-bold align-items-lg-start text-uppercase"> Merg Acc group</b> <br />
                   <ul>
