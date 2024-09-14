@@ -77,12 +77,10 @@ const SearchBar = () => {
               type="text"
               onClick={handleSearchClick}
               placeholder=" Search Here ..."
-              className='search-input border-2 border-info d-lg-inline-grid'
-              style={{width:'500px'}}
-              // style={{marginLeft:'100px'}}
+              className='search-input border-2 border-info '
               autoFocus
               readOnly
-              disabled
+              // disabled
             />
           </Navbar.Collapse>
         </Container>

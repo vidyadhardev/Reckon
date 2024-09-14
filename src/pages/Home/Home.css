@@ -59,7 +59,7 @@
   /* Adjust text size for specific elements */
   .home-page p,
   .home-page .text-contain p {
-    font-size: 9px !important;
+    font-size: 10px !important;
     margin-top: 0px !important;
   }
   /* If you want to target the 'Why To Use Reckon Only?' text specifically */
