@@ -12,13 +12,10 @@ const Footer = () => {
                 Nayagaon (East),
                 <br />Lucknow,
                 UP, India - 226018</li><br />
-              <li>GSTIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;09AAACF9572H1ZA</li>
-              <li>CIN No. &nbsp;&nbsp;: &nbsp;U74120UP2006PTC031351 </li>
-
+              <li>GSTIN&nbsp;&nbsp; : &nbsp;09AAACF9572H1ZA</li>
+              <li>CIN No :&nbsp;U74120UP2006PTC031351 </li>
             </ul>
-
           </div>
-
           {/* <div>
             <ul className="list-unstyled">
               
@@ -29,14 +26,14 @@ const Footer = () => {
           <div>
             <ul className="list-unstyled">
               <li>
-                <BiPhone className="me-3" />  0522-4972500 (Land-Line)
+                <BiPhone className="me-3" />0522-4972500 (Land-Line)
               </li>
               <li>
-                <BiMobileVibration className="me-3" /> 6389590600 <br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6389590700 <br />
+                <BiMobileVibration className="me-3" />6389590600 <br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6389590700 <br />
                 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 6389590800 <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6389590900
               </li>
               <li>
-                <MdEmail className="me-3" />  support@reckonsales.com
+                <MdEmail className="me-3" />support@reckonsales.com
               </li>
             </ul>
           </div>
@@ -45,12 +42,12 @@ const Footer = () => {
           <div>
             <ul className="list-unstyled">
               <li>
-              <BiMobileVibration className="me-3" />  7510000636  - Central India <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  9891185959  - North India<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  9324387120  - West India <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9330182702 -       East India  <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8700247593 - North East<br />
-                <MdEmail className="me-3" /> sales@reckonsales.com
+              <BiMobileVibration className="me-2" />  7510000636  - Central India <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9891185959  - North India<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9324387120  - West India <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9330182702 - East India  <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8700247593 - North East<br />
+                <MdEmail className="me-2" /> sales@reckonsales.com
               </li>
             </ul>
           </div>

@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className='home-content mt-3 ' style={{ border: "3px double black", borderRadius: '5px', background: 'white' }}>
       <div className="home-heading">
-        <div className="container justify-content-around align-items-center w-100  mt-5">
+        <div className="container justify-content-around align-items-center w-100 mt-4">
           <div className="container justify-content-between align-items-center">
-            <img src={HomeImage} alt="background logo" width="100%" style={{ height: "500px" }} className="rounded" />
+            <img src={HomeImage} alt="background logo" width="100%"  className="rounded" />
             {/* <div className=" ratio ratio-16x9">
               <iframe
                 src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay="

@@ -8,6 +8,9 @@ const Administration = () => {
   const handleMenuClick = (menuId) => {
     setActiveMenu(activeMenu === menuId ? '' : menuId);
   };
+  // const handleItemClick = () => {
+  //   handleClose();
+  // }
   return (
     <>
       <div className='reckonjj-fix'>
@@ -27,8 +30,9 @@ const Administration = () => {
               <div className="administration-module ms-2">
                 <div className='mt-2'>
                   <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
+                
                   >
-                    <Link to={`/${encodePath('fm-ms')}`} className="media text-decoration-none text-dark"> Firm Master</Link>
+                    <Link to={`/${encodePath('fm-ms')}`} className="media text-decoration-none text-dark" > Firm Master</Link>
                   </span>
                 </div>
                 <div>

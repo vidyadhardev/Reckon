@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
 .image-contain img {
   height: 400px;
   width: 550px;
@@ -15,13 +14,15 @@
 .image-contain img:hover {
   border-radius: 8px;
 }
-.scrolling-text {
+
+/* .scrolling-text {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
   animation: scroll-text 2s alternate infinite;
-}
+} */
+
 .img-fluid {
   filter: grayscale(100%);
 }
@@ -34,7 +35,7 @@
   .home-page,
   .iframe-container {
     margin-top: 0px !important;
-    padding: 2 !important;
+    padding: 5px !important;
   }
   /* Adjust text size for specific elements */
   .home-page p,
@@ -53,7 +54,7 @@
   .home-page,
   .iframe-container {
     margin-top: 0px !important;
-    padding: 0px !important;
+    padding: 10px !important;
   }
   /* Adjust text size for specific elements */
   .home-page p,

@@ -42,14 +42,16 @@ const SideBar = () => {
   const handleMenuClick = (menuId) => {
     SetActiveMenu(activeMenu === menuId ? '' : menuId);
   }
+
   return (
     <div className=' sidebar w-auto'>
-      <ul className="list-unstyled fix-top-sidebar ">
-        <li className="">
+      <ul className="list-unstyled fix-top-sidebar"  >
+        <li className="" >
           <span
             className={`btn btn-toggle d-inline-flex align-items-center rounded border-info border-2 fw-bold reckon-header w-100 mb-2 mt-2 ${activeMenu === 'reckon-demo-collapse' ? '' : 'collapsed'}`}
             onClick={() => handleMenuClick('reckon-demo-collapse')}
             aria-expanded={activeMenu === 'reckon-demo-collapse'}
+            
           >
             <FaAccusoft className="me-2" />Reckon Demo
           </span>

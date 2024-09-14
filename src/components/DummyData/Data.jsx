@@ -1,4 +1,5 @@
-const SearcBarData = [
+const SearcBarData=[
+    
   { "name": "Firm Master [Hindi]", "path": "fm-ms" },
   { "name": "fy back up", "path": "fy-back-up" },
   { "name": "financial year backup", "path": "fy-back-up" },

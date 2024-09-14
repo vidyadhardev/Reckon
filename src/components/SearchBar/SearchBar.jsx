@@ -1,78 +1,93 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Form, Container } from 'react-bootstrap';
-import { Link, useNavigate, } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SearchModal from '../SearchModal/SearchModal';
 import SearcBarData from "../DummyData/Data";
 import logork from "../../logo.png";
-import { FaLinkedin, FaWhatsapp, FaTwitter } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 import './Searchbar.css';
+
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [reDirect, setReDirect] = useState({
     path: "",
     status: false
-  })
+  });
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false); // State to toggle navbar
+
   const navigate = useNavigate();
+
   useEffect(() => {
     if (reDirect.status) {
       navigate(reDirect.path);
       setReDirect({
         path: "",
         status: false
-      })
+      });
     }
-  }, [reDirect]);
+  }, [reDirect, navigate]);
+
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
+
   const handleSearchClick = () => {
-    setShowModal(true)
+    setShowModal(true);
   };
+
   const handleClose = () => setShowModal(false);
+
   const filteredItems = SearcBarData.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase().slice(0, 9))
   );
+
   const UpdateURL = (e) => {
-    e.preventDefault();  
-    const baseURL = window.location.origin; 
-    window.location.href = baseURL; 
+    e.preventDefault();
+    const baseURL = window.location.origin;
+    window.location.href = baseURL;
   };
-  // Always ask to you go to external link , 
-  // const handleExternalLink = (url) => {
-  //   if (window.confirm("You are about to leave this website and visit an external link.Do you want to continue?")) {
-  //     window.open(url, '_blank', 'noopener,noreferrer');
-  //   }
-  // };
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
   return (
     <>
-      <Navbar expand="sm" className="justify-content-between searchbar-fix " >
+      <Navbar expand="sm" className="justify-content-between searchbar-fix" >
         <Container fluid className='navbarScroll'>
 
+          {/* Logo and home navigation */}
           <Link to="#" onClick={UpdateURL} role="link" title="Navigate Reckon Sales Web App" className="d-block align-items-center ps-2 text-decoration-none">
-            <img src={logork} alt="Reckon Image" width="40px" className="rounded bg-info" />
+            <img src={logork} alt="Reckon logo" width="40px" className="rounded bg-info" />
           </Link>
 
-          <Navbar.Collapse id="navbarScroll" className='justify-content-center ms-lg-5'>
+          {/* Navbar Toggle Button */}
+          <Navbar.Toggle
+            aria-controls="navbarScroll"
+            onClick={toggleNavbar}
+            className=" bg-light border border-2"
+            aria-expanded={isNavbarOpen}
+            title='Click to Open searchbar'
+          ><FiSearch /></Navbar.Toggle>
+
+          {/* Navbar Collapse (search input) */}
+          <Navbar.Collapse id="navbarScroll" className={`justify-content-center ms-lg-5 ${'show' ? 'isNavbarOpen' : ''} `}>
             <Form.Control
               type="text"
               onClick={handleSearchClick}
               placeholder=" Search Here ..."
-              className='search-input border-2 border-info ms-5'
-              style={{ width: "450px" }}
+              className='search-input border-2 border-info d-lg-inline-grid'
+              style={{width:'500px'}}
+              // style={{marginLeft:'100px'}}
               autoFocus
               readOnly
               disabled
             />
           </Navbar.Collapse>
-          {/* <span className='d-inline-flex gap-3 text-primary'>
-            <Navbar aria-controls="basic-navbar-nav" className='justify-content-around' style={{ fontSize: '10px' }} />
-            <span onClick={() => handleExternalLink("https://www.linkedin.com/in/vidya-dhar-maurya-435a40222/")} className='me-3 fs-4 rounded' style={{ cursor: 'pointer' }}><FaLinkedin /></span>
-            <span onClick={() => handleExternalLink("https://x.com/MauryaVidyadhar")} className='me-3 fs-4' style={{ cursor: 'pointer' }}><FaTwitter /></span>
-            <span onClick={() => handleExternalLink("https://wa.me/9076944738")} className='me-3 fs-4' style={{ cursor: 'pointer' }}><FaWhatsapp /></span>
-          </span> */}
         </Container>
       </Navbar>
+      {/* Search Modal */}
       <SearchModal
         show={showModal}
         handleClose={handleClose}
@@ -83,6 +98,6 @@ const SearchBar = () => {
       />
     </>
   );
-}
-export default SearchBar;
+};
 
+export default SearchBar;
