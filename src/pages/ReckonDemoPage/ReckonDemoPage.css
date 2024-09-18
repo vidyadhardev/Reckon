@@ -1,0 +1,7 @@
+@media (max-width: 576px) {
+  .width-adjust {
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 0;
+  }
+}

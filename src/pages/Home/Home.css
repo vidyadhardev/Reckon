@@ -14,26 +14,9 @@
 .image-contain img:hover {
   border-radius: 8px;
 }
-
-/* .scrolling-text {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  animation: scroll-text 2s alternate infinite;
-} */
-
-.img-fluid {
-  filter: grayscale(100%);
-}
-.img-fluid:hover {
-  filter: grayscale(0%);
-}
-/* Using Media Query for responsive */
 @media (max-width: 765px) {
   .container,
-  .home-page,
-  .iframe-container {
+  .home-page{
     margin-top: 0px !important;
     padding: 5px !important;
   }
@@ -51,8 +34,7 @@
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .container,
-  .home-page,
-  .iframe-container {
+  .home-page{
     margin-top: 0px !important;
     padding: 10px !important;
   }

@@ -9,7 +9,7 @@ const Home = () => {
       <div className="home-heading">
         <div className="container justify-content-around align-items-center w-100 mt-4">
           <div className="container justify-content-between align-items-center">
-            <img src={HomeImage} alt="background logo" width="100%"  className="rounded" />
+            <img src={HomeImage} alt="background logo" width="100%" className="rounded" />
             {/* <div className=" ratio ratio-16x9">
               <iframe
                 src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay="
@@ -94,6 +94,9 @@ const Home = () => {
             <Bounce duration={2300}><b className="fw-bold align-items-lg-start">Get Started with Reckon</b></Bounce>
             <ul>
               Join the thousands of businesses that trust Reckon for their accounting needs. Sign up today and take the first step towards streamlined financial management.
+              We are Reckon Sales Pvt. Ltd. and we make ERP software to make your business more efficient and adaptable. Based out of Lucknow, India we have industry experience of more than 20 years, with a team of dedicated veterans of the industry we want to empower your business and make it as seamless as possible.
+
+              Our services include ERP solutions for Retail, Distribution & Multi-Location businesses in various sectors like Pharmaceutical, Super Market, FMCG, Auto Parts, Textile, Footwear, Restaurants. Dynamism is one of the key visions of our company and that is why we have ventured into providing mobile and cloud-based services for our clients. Our customers, from all over India including International locations, have stayed with us for 15 years; a clear indication of our commitment towards them.
             </ul>
           </p>
           <div>
