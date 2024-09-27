@@ -7,7 +7,7 @@ const SalePriceDifferenceNoteB = () => {
         <div className="home-heading">
           <div className="container justify-content-around align-items-center w-75 mt-3">
             <div className="container justify-content-between align-items-center">
-              <h3> SalePriceDifferenceNoteB </h3>
+              <h3> SalePriceDifferenceNote Book </h3>
               {/* <div className=" ratio ratio-16x9">
               <iframe
                 src="https://www.youtube.com/embed/rGQ79MrZUQw?autoplay="

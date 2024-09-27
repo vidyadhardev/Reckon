@@ -29,71 +29,92 @@ const Administration = () => {
             <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small dropdownList ">
               <div className="administration-module ms-2">
                 <div className='mt-2'>
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                
-                  >
-                    <Link to={`/${encodePath('fm-ms')}`} className="media text-decoration-none text-dark" > Firm Master</Link>
-                  </span>
+                  <Link to={`/${encodePath('fm-ms')}`} className="media text-decoration-none " >
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Firm Master
+                    </span>
+                  </Link>
                 </div>
                 <div>
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('fy-back-up')}`} className="media text-decoration-none text-dark"> FYBackUp</Link>
-                  </span>
+                  <Link to={`/${encodePath('fy-back-up')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      FYBackUp
+                    </span>
+                  </Link>
                 </div>
                 <div>
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('fy-restore')}`} className="media text-decoration-none text-dark"> FY Restore</Link>
-                  </span>
+                  <Link to={`/${encodePath('fy-restore')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      FY Restore
+                    </span>
+                  </Link>
                 </div>
                 <div className="voucher-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('voucher-type')}`} className="media text-decoration-none text-dark"> Voucher Type</Link>
-                  </span>
+                  <Link to={`/${encodePath('voucher-type')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Voucher type
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('series-master')}`} className="media text-decoration-none text-dark"> Sereis Master </Link>
-                  </span>
+                  <Link to={`/${encodePath('series-master')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Sereis Master
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('backup-path-entry')}`} className="media text-decoration-none text-dark"> Backup Path Entry </Link>
-                  </span>
+                  <Link to={`/${encodePath('backup-path-entry')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Backup Path Entry
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('holiday-path-en')}`} className="media text-decoration-none text-dark">Holiday Setup </Link>
-                  </span>
+                  <Link to={`/${encodePath('holiday-path-en')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Holiday Setup
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('transfer-next-year')}`} className="media text-decoration-none text-dark"> Transfer Next Year </Link>
-                  </span>
+                  <Link to={`/${encodePath('transfer-next-year')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Transfer Next Year
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('fev-menu-en')}`} className="media text-decoration-none text-dark"> Favourite Menu Entry </Link>
-                  </span>
+                  <Link to={`/${encodePath('fev-menu-en')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Favourite Menu Entry
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('trans-stock-ledger-bal')}`} className="media text-decoration-none text-dark"> Trans.Stock,Ledger Bal. </Link>
-                  </span>
+                  <Link to={`/${encodePath('trans-stock-ledger-bal')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Trans.Stock,Ledger Bal.
+                    </span>
+                  </Link>
                 </div>
                 <div className="sereis-type module" >
-                  <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                  >
-                    <Link to={`/${encodePath('import-setting')}`} className="media text-decoration-none text-dark"> Import Settings </Link>
-                  </span>
+                  <Link to={`/${encodePath('import-setting')}`} className="media text-decoration-none ">
+                    <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark`}
+                    >
+                      Import Settings
+                    </span>
+                  </Link>
                 </div>
               </div>
             </ul>

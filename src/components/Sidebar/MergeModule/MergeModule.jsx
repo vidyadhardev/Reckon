@@ -20,163 +20,166 @@ const MergeModule = () => {
             <FaModx className="me-1" /> Merge Module
           </span>
           <div className={`collapse ps-2 ${activeMenu === 'merg-module-collapse' ? 'show' : ''}`} id="merg-module-collapse">
-            <div className="voucher-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-2`}
-              >
-                <Link to={`/${encodePath('merge-item')}`} className="media text-decoration-none text-dark"> Merge Item</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-item')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-2 text-dark w-100">
+                  Merge Item
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-batch')}`} className="media text-decoration-none text-dark">Merge Batch </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-batch')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Batch
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-company')}`} className="media text-decoration-none text-dark"> Merge Company</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-company')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Company
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-item-group')}`} className="media text-decoration-none text-dark">Merge ItemGroup </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-item-group')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Item Group
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-tax')}`} className="media text-decoration-none text-dark"> Merge Tax </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-tax')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Tax
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-salt')}`} className="media text-decoration-none text-dark"> Merge Salt </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-salt')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Salt
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-location')}`} className="media text-decoration-none text-dark"> Merge Location </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-location')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Location
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-other-group')}`} className="media text-decoration-none text-dark"> Merge Other Group</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-other-group')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Other Group
+                </span>
+              </Link>
             </div>
-            <div>
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-commodity-master')}`} className="media text-decoration-none text-dark">MergeCommodityMaster</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-commodity-master')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  MergeCommodityMaster
+                </span>
+              </Link>
             </div>
-            <div>
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-schdule-master')}`} className="media text-decoration-none text-dark"> Merge SchduleMaster</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-schdule-master')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  MergeScheduleMaster
+                </span>
+              </Link>
             </div>
-            <div className="voucher-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-firm-balance')}`}className="media text-decoration-none text-dark"> MergeFirmBalance(Stock/Accounts)</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-firm-balance')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  MergeFirmBalance(Stock/Accounts)
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-series')}`} className="media text-decoration-none text-dark">Merge Series </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-series')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Series
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-ledger-master')}`} className="media text-decoration-none text-dark"> Merge Ledger Master</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-ledger-master')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Ledger Master
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-area')}`} className="media text-decoration-none text-dark">Merge Area </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-area')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Area
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-route')}`} className="media text-decoration-none text-dark"> Merge Route </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-route')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Route
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-station')}`} className="media text-decoration-none text-dark"> Merge Station </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-station')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Station
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-             
-                <Link to={`/${encodePath('merge-sales-man')}`} className="media text-decoration-none text-dark"> Merge Sales Man </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-sales-man')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Sales Man
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-delivery-man')}`} className="media text-decoration-none text-dark">Merge Delivery Man</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-delivery-man')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Delivery Man
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-transporter')}`} className="media text-decoration-none text-dark">Merge Transporter </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-transporter')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Transporter
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-acgroup')}`}  className="media text-decoration-none text-dark"> Merge AcGroup</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-acgroup')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge AcGroup
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-city')}`} className="media text-decoration-none text-dark">Merge City </Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-city')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge City
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-state')}`} className="media text-decoration-none text-dark"> Merge State</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-state')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge State
+                </span>
+              </Link>
             </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-country')}`} className="media text-decoration-none text-dark"> Merge Country </Link>
-              </span>
-            </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-          
-                <Link to={`/${encodePath('merge-bank')}`} className="media text-decoration-none text-dark"> Merge Bank </Link>
-              </span>
-            </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-r-doctor')}`} className="media text-decoration-none text-dark">Merge RDoctor</Link>
-              </span>
-            </div>
-            <div className="sereis-type module" >
-              <span className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-              >
-                <Link to={`/${encodePath('merge-patient')}`} className="media text-decoration-none text-dark">Merge Patient</Link>
-              </span>
+            <div className="voucher-type module">
+              <Link to={`/${encodePath('merge-country')}`} className="media text-decoration-none text-dark">
+                <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                  Merge Country
+                </span>
+              </Link>
             </div>
           </div>
         </li >

@@ -49,7 +49,7 @@ const PriceDifference = () => {
                 </Link>
               </div>
               <div className='button'>
-                <Link to={`/${encodePath('sale-price-difference-note')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                <Link to={`/${encodePath('sale-price-difference-note-book')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
                   <span
                     className={`btn btn-outline-info mt-2  d-inline-flex align-items-center rounded border-2 admin-Sub-button  w-100 text-dark`}
                   >

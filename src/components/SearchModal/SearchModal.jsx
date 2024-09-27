@@ -60,10 +60,10 @@ const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filter
           <ul className="results mt-4">
             <ul className="results mt-4">
               {searchTerm && filteredItems.length === 0 ? (
-                <li className="list-unstyled text-danger fs-5 text-center text-capitalize justify-content-center align-items-center">
-                  Value Not Match.. !
+                <li className="list-unstyled text-danger fs-4 text-contain text-capitalize justify-content-center align-items-center">
+                  Oop's 🧐 Input Doesn't Match.. !
                   <br />
-                  Working On This Module ..!
+                  {/* Working On This Module ..! */}
                 </li>
               ) : (
                 searchTerm && filteredItems.map((item, index) => (
@@ -77,7 +77,7 @@ const SearchModal = ({ show, handleClose, searchTerm, handleSearchChange, filter
                     }}
                     style={{ cursor: 'pointer' }}
                   >
-                    <p className='FetchDataLocal text-primary-emphasis text-capitalize'>
+                    <p className='text-primary-emphasis text-capitalize mE-1'>
                       {item.name}
                       <li className='list-unstyled border-bottom border-dark' />
                     </p>

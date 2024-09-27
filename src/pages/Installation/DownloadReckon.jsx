@@ -18,13 +18,13 @@ const DownloadReckon = () => {
               ></iframe>
             </Ratio>
           </div>
-          <div className='row'>
+          {/* <div className='row'>
             <div className='mt-3 mb-2 ms-5'>
               <Link to={"https://reckonsales.in/downloads.php"}  >
                 <span className='btn btn-outline-info'>Download Reckon</span>
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className='col'>
             <p className='text-para mt-2'>
 

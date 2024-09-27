@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { encodePath } from './utilities/Utils.js';
 import MobileSideBar from './MobileLayout/MobileSideBar.jsx';
@@ -31,11 +32,12 @@ import LANConfigure from './pages/Installation/LANConfigure.jsx';
 import UserCreate from './pages/Installation/UserCreate.jsx';
 import PrinterPageSetup from './pages/Installation/PrinterPageSetup.jsx';
 import DownloadSQLServer from './pages/Installation/DownloadSQLServer.jsx';
-// Installation End 
-import ReckonDemo from './components/Sidebar/ReckonDemo/ReckonDemo.jsx';
 import Installation from './components/Sidebar/Installation/Installation.jsx';
-import SearchBar from './components/SearchBar/SearchBar.jsx';
+// Installation End 
+// Sidebar
+import SearchBar from './components/SearchBar/SearchBar.jsx'
 import SideBar from "./components/Sidebar/Sidebar.jsx"
+// Administration
 import VoucherType from './pages/Administration/VoucherType.jsx';
 import FirmMaster from './pages/Administration/FirmMaster.jsx';
 import Home from './pages/Home/Home.jsx';
@@ -61,7 +63,7 @@ import DETelly from './pages/Utilitie/DETelly.jsx';
 import DEReckon from './pages/Utilitie/DEReckon.jsx';
 import ImportImportMethod from "./pages/Utilitie/ImportImportMethod.jsx";
 import ImportReckonVoucher from "./pages/Utilitie/ImportReckonVoucher.jsx";
-import NonWorkingItems_Company from "./pages/Utilitie/NonWorkingItemsCompany.jsx";
+import NonWorkingItemsCompany from "./pages/Utilitie/NonWorkingItemsCompany.jsx";
 import NonWorkingLedger from "./pages/Utilitie/NonWorkingLedger.jsx";
 import ItemMasterEditing from "./pages/Utilitie/ItemMasterEditing.jsx";
 import MultiBillPrint from "./pages/Utilitie/MultiBillPrint.jsx";
@@ -132,6 +134,9 @@ import SupplierVsMfgCompany from './pages/InventoryMaster/SupplierVsMfgCompany.j
 import KitMasterEntry from './pages/InventoryMaster/KitMasterEntry.jsx';
 import StockOpenig from './pages/InventoryMaster/StockOpening.jsx';
 import DiscComm from './pages/InventoryMaster/DiscComm.jsx';
+// Scheme & Offer
+import PromotionOfferEntry from './pages/SchemOffer/PromotionOfferEntry.jsx';
+import SchemeMaster from './pages/SchemOffer/SchemeMaster.jsx';
 // OtherMaster
 import Location from './pages/OtherMaster/Location.jsx';
 import State from './pages/OtherMaster/State.jsx';
@@ -338,9 +343,125 @@ import PPDifferenceNoteBook from './pages/PriceDifference/PPDifferenceNoteBook.j
 import PPriceDifferenceNote from './pages/PriceDifference/PPriceDifferenceNote.jsx';
 import SalePriceDifferenceNote from './pages/PriceDifference/SalePriceDifferenceNote.jsx';
 import SalePriceDifferenceNoteB from './pages/PriceDifference/SalePriceDifferenceNoteB.jsx';
-
+// ExpiryIssue
+import ExpiryIssueBook from './pages/ExpiryIssue/ExpiryIssueBook.jsx';
+import ExpiryIssueChallan from './pages/ExpiryIssue/ExpiryIssueChallan.jsx';
+import ExpiryIssueChallanBook from './pages/ExpiryIssue/ExpiryIssueChallanBook.jsx';
+import ExpiryIssueChallanJV from './pages/ExpiryIssue/ExpiryIssueChallanJV.jsx';
+import ExpiryIssueChallanJVPrint from './pages/ExpiryIssue/ExpiryIssueChallanJVPrint.jsx';
+import ExpiryIssueNote from './pages/ExpiryIssue/ExpiryIssueNote.jsx';
+// Expiry Receive
+import ExpiryReceiveChallan from './pages/ExpiryReceive/ExpiryReceiveChallan.jsx';
+import ExpiryChallanJV from './pages/ExpiryReceive/ExpiryChallanJV.jsx';
+import ExpiryChallanJVPrint from './pages/ExpiryReceive/ExpiryChallanJVPrint.jsx';
+import ExpiryReceiveBook from './pages/ExpiryReceive/ExpiryReceiveBook.jsx';
+import ExpiryReceiveChallanBook from './pages/ExpiryReceive/ExpiryReceiveChallanBook.jsx';
+import ExpiryReceiveNote from './pages/ExpiryReceive/ExpiryReceiveNote.jsx';
+import NonClaimExpIn from './pages/ExpiryReceive/NonClaimExpIn.jsx';
+// Stock Transfer & Stock report
+import StockStatus from './pages/StockTransferReport/StockStatus.jsx';
+import ExpiryReport from './pages/StockTransferReport/ExpiryReport.jsx';
+import StockSalesStatement from './pages/StockTransferReport/StockSalesStatement.jsx';
+import ExpiryStock from './pages/StockTransferReport/ExpiryStock.jsx';
+import NearExpiryStock from './pages/StockTransferReport/NearExpiryStock.jsx';
+import BanStock from './pages/StockTransferReport/BanStock.jsx';
+import MinimumLevelStock from './pages/StockTransferReport/MinimumLevelStock.jsx';
+import MaximumLevelStock from './pages/StockTransferReport/MaximumLevelStock.jsx';
+import DumpStock from './pages/StockTransferReport/DumpStock.jsx';
+import HoldStock from './pages/StockTransferReport/HoldStock.jsx';
+import ClosingStock from './pages/StockTransferReport/ClosingStock.jsx';
+import NonSaleableToSaleable from './pages/StockTransferReport/NonSaleableToSaleable.jsx';
+import SaleableToNonSaleable from './pages/StockTransferReport/SaleableToNonSaleable.jsx';
+// Sales Report
+import CompanyWiseSaltWiseSaleSummary from './pages/SalesReport/CompanyWiseSaltWiseSaleSummary.jsx';
+import BillItemWiseSaleRegister from './pages/SalesReport/BillItemWiseSaleRegister.jsx';
+import CategoryWiseItemWiseSaleSummary from './pages/SalesReport/CategoryWiseItemWiseSaleSummary.jsx';
+import CategoryWiseSaleSummary from './pages/SalesReport/CategoryWiseSaleSummary.jsx';
+import ClubbedSaleRegister from './pages/SalesReport/ClubbedSaleRegister.jsx';
+import CompanyWiseItemWiseSaleSummary from './pages/SalesReport/CompanyWiseItemWiseSaleSummary.jsx';
+import CompanyWisePartyWiseSaleSummary from './pages/SalesReport/CompanyWisePartyWiseSaleSummary.jsx';
+import CompanyWiseGroupWiseSaleSummary from './pages/SalesReport/CompanyWiseGroupWiseSaleSummary.jsx';
+import CompanyWiseSaleSummary from './pages/SalesReport/CompanyWiseSaleSummary.jsx';
+import DayWiseSaleRegister from './pages/SalesReport/DayWiseSaleRegister.jsx';
+import DiscWiseSaleSummary from './pages/SalesReport/DiscWiseSaleSummary.jsx';
+import GroupSubGroupMonthWiseSaleReport from './pages/SalesReport/GroupSubGroupMonthWiseSaleReport.jsx';
+import GroupWiseItemWiseSaleSummary from './pages/SalesReport/GroupWiseItemWiseSaleSummary.jsx';
+import GroupWiseSaleSummary from './pages/SalesReport/GroupWiseSaleSummary.jsx';
+import ItemMovingReport from './pages/SalesReport/ItemMovingReport.jsx';
+import ItemPartySaleReport from './pages/SalesReport/ItemPartySaleReport.jsx';
+import ItemWiseBatchWiseTranLedger from './pages/SalesReport/ItemWiseBatchWiseTranLedger.jsx';
+import ItemWiseSaleReport from './pages/SalesReport/ItemWiseSaleReport.jsx';
+import PartyWiseSaleStatement from './pages/SalesReport/PartyWiseSaleStatement.jsx';
+import MfgCompanyWiseBillWiseSaleRegister from './pages/SalesReport/MfgCompanyWiseBillWiseSaleRegister.jsx';
+import MfgCompanyWiseItemWiseSaleRegister from './pages/SalesReport/MfgCompanyWiseItemWiseSaleRegister.jsx';
+import MobileWiseSaleRegister from './pages/SalesReport/MobileWiseSaleRegister.jsx';
+import MonthlySaleRegister from './pages/SalesReport/MonthlySaleRegister.jsx';
+import MRWiseItemWiseSaleSummary from './pages/SalesReport/MRWiseItemWiseSaleSummary.jsx';
+import MrWiseSaleSummary from './pages/SalesReport/MrWiseSaleSummary.jsx';
+import PartyWiseComapnyWiseSaleSummary from './pages/SalesReport/PartyWiseComapnyWiseSaleSummary.jsx';
+import PartyWiseGroupWiseSaleSummary from './pages/SalesReport/PartyWiseGroupWiseSaleSummary.jsx';
+import PartyWiseItemWiseSaleSummary from './pages/SalesReport/PartyWiseItemWiseSaleSummary.jsx';
+import PartyWiseSaleSummary from './pages/SalesReport/PartyWiseSaleSummary.jsx';
+import PartyWiseSaltWiseSaleSummary from './pages/SalesReport/PartyWiseSaltWiseSaleSummary.jsx';
+import PriceDiffCreditNote from './pages/SalesReport/PriceDiffCreditNote.jsx';
+import SaleRegister from './pages/SalesReport/SaleRegister.jsx';
+import SaltWiseItemWiseSaleSummary from './pages/SalesReport/SaltWiseItemWiseSaleSummary.jsx';
+import SaltWiseSaleSummary from './pages/SalesReport/SaltWiseSaleSummary.jsx';
+import SupplierWiseItemWiseSaleRegister from './pages/SalesReport/SupplierWiseItemWiseSaleRegister.jsx';
+import PartyWiseSaleReport from './pages/SalesReport/PartyWiseSaleReport.jsx';
+import ItemWiseSaleSummary from './pages/SalesReport/ItemWiseSaleSummary.jsx';
+// Purchase Report
+import PurchaseRegister from './pages/PurchaseReport/PurchaseRegister.jsx';
+import MrpRateDiffReport from './pages/PurchaseReport/MrpRateDiffReport.jsx';
+import SupplierPurchaseRegister from './pages/PurchaseReport/SupplierPurchaseRegister.jsx';
+import ItemWiseBestSupplier from './pages/PurchaseReport/ItemWiseBestSupplier.jsx';
+import GroupMonthlyPurchase from './pages/PurchaseReport/GroupMonthlyPurchase.jsx';
+import PartyPurchaseReport from './pages/PurchaseReport/PartyPurchaseReport.jsx';
+import MonthlyPurchase from './pages/PurchaseReport/MonthlyPurchase.jsx';
+import DayWisePurchase from './pages/PurchaseReport/DayWisePurchase.jsx';
+import ItemsPurchaseReport from './pages/PurchaseReport/ItemsPurchaseReport.jsx';
+import BillWiseItemPurchase from './pages/PurchaseReport/BillWiseItemPurchase.jsx';
+// GST Report
+import GSTReturns from './pages/GSTReport/GSTReturns.jsx';
+import GSTColumnPurchase from './pages/GSTReport/GSTColumnPurchase.jsx';
+import GSTColumnPurchaseOld from './pages/GSTReport/GSTColumnPurchaseOld.jsx';
+import GSTColumnSale from './pages/GSTReport/GSTColumnSale.jsx';
+import GSTColumnSaleOld from './pages/GSTReport/GSTColumnSaleOld.jsx';
+import GSTPurchaseRegister from './pages/GSTReport/GSTPurchaseRegister.jsx';
+import GSTRegisters from './pages/GSTReport/GSTRegisters.jsx';
+import GSTSaleRegister from './pages/GSTReport/GSTSaleRegister.jsx';
+import EWayEInvoice from './pages/GSTReport/EWayEInvoice.jsx';
+import ShowGSTDetail from './pages/GSTReport/ShowGSTDetail.jsx';
+import TCSTDSRegistes from './pages/GSTReport/TCSTDSRegistes.jsx';
+import UpdateGSTINPinCode from './pages/GSTReport/UpdateGSTINPinCode.jsx';
+import GSTTaxClubbing from './pages/GSTReport/GSTTaxClubbing.jsx';
+//DepartmentalReport
+import GpReportGrid from './pages/DepartmentalReport/GpReportGrid.jsx';
+import BillWiseItemWiseScheduleRegisterRetail from './pages/DepartmentalReport/BillWiseItemWiseScheduleRegisterRetail.jsx';
+import BillWiseItemWiseScheduleRegisterWholSale from './pages/DepartmentalReport/BillWiseItemWiseScheduleRegisterWholSale.jsx';
+// DispatchModule
+import Annexure from './pages/DispatchModule/Annexure.jsx';
+import Checking from './pages/DispatchModule/Checking.jsx';
+import Delivery from './pages/DispatchModule/Delivery.jsx';
+import DispatchDashBoard from './pages/DispatchModule/DispatchDashBoard.jsx';
+import DispatchReport from './pages/DispatchModule/DispatchReport.jsx';
+// import MultiBillPrint from './pages/DispatchModule/MultiBillPrint.jsx'; Allready Import module in upper 
+import Packing from './pages/DispatchModule/Packing.jsx';
+import PickingDispatchSummary from './pages/DispatchModule/PickingDispatchSummary.jsx';
+import UnDeliver from './pages/DispatchModule/UnDeliver.jsx';
+import UpdateStockValue from './pages/DispatchModule/UpdateStockValue.jsx';
+// Email
+import MailConfigEntry from './pages/Email/MailConfigEntry.jsx';
+import GeneralEmail from './pages/Email/GeneralEmail.jsx';
+import GeneralSMS from './pages/Email/GeneralSMS.jsx';
+// Exit
+import SetDevice from './pages/Exit/SetDevice.jsx';
+import RefreshPrinterNames from './pages/Exit/RefreshPrinterNames.jsx';
+import MenuHelp from './pages/Exit/MenuHelp.jsx';
+import ChangeWallpaper from './pages/Exit/ChangeWallpaper.jsx';
 // Footer 
 import Footer from './pages/Footer/Footer.jsx';
+import Foot from './pages/Foot.jsx';
 
 const SubNavigation = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -361,8 +482,6 @@ const SubNavigation = () => {
   const toggleMobileSidebar = () => {
     setIsMobileSidebarOpen(!isMobileSidebarOpen);
   };
-
-
   return (
     <HashRouter className="parent">
       <SearchBar />
@@ -374,15 +493,13 @@ const SubNavigation = () => {
             top: '8px',
             left: '60px',
             zIndex: 1000,
-            // width:'',
-            // backgroundColor: '#0dcaf0',
             color: 'white',
             borderRadius: '5px',
             cursor: 'pointer',
             padding: '10px',
+
           }}
         >
-
           <MobileSideBar /> {/* Use MobileSideBar as clickable toggle */}
         </div>
       )}
@@ -398,14 +515,13 @@ const SubNavigation = () => {
             backgroundColor: '#fff',
             boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
             zIndex: 1000,
+
           }}
         >
-            {/* This Sidebar For Mobile View */}
+          {/* This Sidebar For Mobile View */}
           <MobileSideBar /> {/* Render MobileSideBar when open */}
         </div>
       )}
-
-
       <div className="container-fluid">
         <div className="row flex-nowrap">
           <div
@@ -418,19 +534,21 @@ const SubNavigation = () => {
               scrollbarWidth: "thin",
               scrollbarColor: "#0dcaf0 white",
               display: isMobile && !isSidebarOpen ? 'none' : 'block',
+
             }}
           >
             {/* This Sidebar For Desktop View */}
-            <SideBar /> 
+            <SideBar />
           </div>
 
           <div className="col-10 all-page-fix"
             style={{
               marginLeft: isMobile && !isSidebarOpen ? '0%' : '17.5%',
-              width: isMobile && !isSidebarOpen ? '100%' : 'calc(100% - 17.5%)'
+              width: isMobile && !isSidebarOpen ? '100%' : 'calc(100% - 17.5%)',
+              // scrollBehavior:"smooth",
+              // transition: 'all ease-in-out 0.2s' 
             }}
           >
-
             <Routes>
               {/* Reckon Demo */}
               <Route path={`/${encodePath('departmental-store')}`} element={<DepartmentalStore />} />
@@ -470,8 +588,6 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('generation-production-entry')}`} element={<GenerateProductionEntry />} />
               {/* Re Update End */}
               <Route path={`/${encodePath('home')}`} element={<Home />} />
-              <Route path={`/${encodePath('reckon')}`} element={<ReckonDemo />} />
-              <Route path={`/${encodePath('installetion-reckon')}`} element={<Installation />} />
               <Route path={`/${encodePath('fy-back-up')}`} element={<FYBackUp />} />
               <Route path={`/${encodePath('fy-restore')}`} element={<FyRestore />} />
               <Route path={`/${encodePath('fm-ms')}`} element={<FirmMaster />} />
@@ -497,7 +613,7 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('de-reckon')}`} element={<DEReckon />} />
               <Route path={`/${encodePath('import-import-method')}`} element={<ImportImportMethod />} />
               <Route path={`/${encodePath('import-reckon-voucher')}`} element={<ImportReckonVoucher />} />
-              <Route path={`/${encodePath('non-working-items-company')}`} element={<NonWorkingItems_Company />} />
+              <Route path={`/${encodePath('non-working-items-company')}`} element={<NonWorkingItemsCompany />} />
               <Route path={`/${encodePath('non-working-ledger')}`} element={<NonWorkingLedger />} />
               <Route path={`/${encodePath('item-master-editing')}`} element={<ItemMasterEditing />} />
               <Route path={`/${encodePath('multi-bill-print')}`} element={<MultiBillPrint />} />
@@ -563,6 +679,9 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('kit-master-entry')}`} element={<KitMasterEntry />} />
               <Route path={`/${encodePath('stock-opening')}`} element={<StockOpenig />} />
               <Route path={`/${encodePath('disc-comm')}`} element={<DiscComm />} />
+              {/* Scheme Master */}
+              <Route path={`/${encodePath('schem-master')}`} element={<SchemeMaster />} />
+              <Route path={`/${encodePath('promotion-offer-entry')}`} element={<PromotionOfferEntry />} />
               {/* Other Master */}
               <Route path={`/${encodePath('location')}`} element={<Location />} />
               <Route path={`/${encodePath('state')}`} element={<State />} />
@@ -747,7 +866,7 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('sale-return-challan-book')}`} element={<SaleReturnChallanBook />} />
               <Route path={`/${encodePath('sale-return-note')}`} element={<SaleReturnNote />} />
               <Route path={`/${encodePath('sale-return-retail')}`} element={<SaleReturnRetail />} />
-              {/* Purchase Invoice */}
+              {/* Sale Invoice */}
               <Route path={`/${encodePath('sale-return-book')}`} element={<SaleReturnBook />} />
               <Route path={`/${encodePath('sale-return-challan')}`} element={<SaleReturnChallan />} />
               <Route path={`/${encodePath('sale-return-challan-book')}`} element={<SaleReturnChallanBook />} />
@@ -775,16 +894,134 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('p-price-difference-note')}`} element={<PPDifferenceNoteBook />} />
               <Route path={`/${encodePath('p-price-difference-note')}`} element={<PPriceDifferenceNote />} />
               <Route path={`/${encodePath('sale-price-difference-note')}`} element={<SalePriceDifferenceNote />} />
-              <Route path={`/${encodePath('sale-price-difference-note')}`} element={<SalePriceDifferenceNoteB />} />
+              <Route path={`/${encodePath('sale-price-difference-note-book')}`} element={<SalePriceDifferenceNoteB />} />
+              {/* Expiry Issue */}
+              <Route path={`/${encodePath('expiry-issue-book')}`} element={<ExpiryIssueBook />} />
+              <Route path={`/${encodePath('expiry-issue-challan')}`} element={<ExpiryIssueChallan />} />
+              <Route path={`/${encodePath('expiry-issue-challan-book')}`} element={<ExpiryIssueChallanBook />} />
+              <Route path={`/${encodePath('expiry-issue-challan-jv')}`} element={<ExpiryIssueChallanJV />} />
+              <Route path={`/${encodePath('expiry-issue-challan-jv-print')}`} element={<ExpiryIssueChallanJVPrint />} />
+              <Route path={`/${encodePath('expiry-issue-note')}`} element={<ExpiryIssueNote />} />
+              {/* Expiry Receive */}
+              <Route path={`/${encodePath('expiry-receive-challan')}`} element={<ExpiryReceiveChallan />} />
+              <Route path={`/${encodePath('expiry-challan-jv')}`} element={<ExpiryChallanJV />} />
+              <Route path={`/${encodePath('expiry-challan-jv-print')}`} element={<ExpiryChallanJVPrint />} />
+              <Route path={`/${encodePath('expiry-receive-book')}`} element={<ExpiryReceiveBook />} />
+              <Route path={`/${encodePath('expiry-receive-challan-book')}`} element={<ExpiryReceiveChallanBook />} />
+              <Route path={`/${encodePath('expiry-receive-note')}`} element={<ExpiryReceiveNote />} />
+              <Route path={`/${encodePath('non-claim-exp-in')}`} element={<NonClaimExpIn />} />
+              {/* Stock Transfer And Stock Report */}
+              <Route path={`/${encodePath('stock status')}`} element={<StockStatus />} />
+              <Route path={`/${encodePath('expiry-report')}`} element={<ExpiryReport />} />
+              <Route path={`/${encodePath('stock-&-sales-statment')}`} element={<StockSalesStatement />} />
+              <Route path={`/${encodePath('expiry-stock')}`} element={<ExpiryStock />} />
+              <Route path={`/${encodePath('near-expiry-stock')}`} element={<NearExpiryStock />} />
+              <Route path={`/${encodePath('ban-stock')}`} element={<BanStock />} />
+              <Route path={`/${encodePath('minimum-level-stock')}`} element={<MinimumLevelStock />} />
+              <Route path={`/${encodePath('maximum-level-stock')}`} element={<MaximumLevelStock />} />
+              <Route path={`/${encodePath('dump-stock')}`} element={<DumpStock />} />
+              <Route path={`/${encodePath('hold-stock')}`} element={<HoldStock />} />
+              <Route path={`/${encodePath('closing-stock')}`} element={<ClosingStock />} />
+              <Route path={`/${encodePath('non-saleable-to-saleable')}`} element={<NonSaleableToSaleable />} />
+              <Route path={`/${encodePath('saleable-to-non-saleable')}`} element={<SaleableToNonSaleable />} />
+              {/* SalesReport */}
+              <Route path={`/${encodePath('sale-register')}`} element={<SaleRegister />} />
+              <Route path={`/${encodePath('day-wise-sale-register')}`} element={<DayWiseSaleRegister />} />
+              <Route path={`/${encodePath('monthly-sale-register')}`} element={<MonthlySaleRegister />} />
+              <Route path={`/${encodePath('item-wise-sale-report')}`} element={<ItemWiseSaleReport />} />
+              <Route path={`/${encodePath('bill-item-wise-sale-register')}`} element={<BillItemWiseSaleRegister />} />
+              <Route path={`/${encodePath('company-wise-salt-wise-sale-summary')}`} element={<CompanyWiseSaltWiseSaleSummary />} />
+              <Route path={`/${encodePath('party-wise-sale-summary')}`} element={<PartyWiseSaleSummary />} />
+              <Route path={`/${encodePath('party-wise-sale-statment')}`} element={<PartyWiseSaleStatement />} />
+              <Route path={`/${encodePath('party-wise-sale-report')}`} element={<PartyWiseSaleReport />} />
+              <Route path={`/${encodePath('category-wise-item-wise-sale-summary')}`} element={<CategoryWiseItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('category-wise-sale-summary')}`} element={<CategoryWiseSaleSummary />} />
+              <Route path={`/${encodePath('clubbed-sale-register')}`} element={<ClubbedSaleRegister />} />
+              <Route path={`/${encodePath('company-wise-item-wise-sale-summary')}`} element={<CompanyWiseItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('company-wise-party-wise-sale-summary')}`} element={<CompanyWisePartyWiseSaleSummary />} />
+              <Route path={`/${encodePath('company-wise-group-wise-sale-summary')}`} element={<CompanyWiseGroupWiseSaleSummary />} />
+              <Route path={`/${encodePath('company-wise-sale-summary')}`} element={<CompanyWiseSaleSummary />} />
+              <Route path={`/${encodePath('disc-wise-sale-summary')}`} element={<DiscWiseSaleSummary />} />
+              <Route path={`/${encodePath('group-subGroup-month-wise-sale-report')}`} element={<GroupSubGroupMonthWiseSaleReport />} />
+              <Route path={`/${encodePath('group-wise-item-wise-sale-summary')}`} element={<GroupWiseItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('group-wise-sale-summary')}`} element={<GroupWiseSaleSummary />} />
+              <Route path={`/${encodePath('item-moving-report')}`} element={<ItemMovingReport />} />
+              <Route path={`/${encodePath('item-party-sale-report')}`} element={<ItemPartySaleReport />} />
+              <Route path={`/${encodePath('item-wise-batch-wise-tranLedger')}`} element={<ItemWiseBatchWiseTranLedger />} />
+              <Route path={`/${encodePath('item-wise-sale-summary')}`} element={<ItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('MfgCompany-wise-bill-wise-sale-register')}`} element={<MfgCompanyWiseBillWiseSaleRegister />} />
+              <Route path={`/${encodePath('MfgCompany-wise-item-wise-sale-register')}`} element={<MfgCompanyWiseItemWiseSaleRegister />} />
+              <Route path={`/${encodePath('mobile-wise-sale-register')}`} element={<MobileWiseSaleRegister />} />
+              <Route path={`/${encodePath('MRWise-item-wise-sale-summary')}`} element={<MRWiseItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('MrWise-sale-summary')}`} element={<MrWiseSaleSummary />} />
+              <Route path={`/${encodePath('party-wise-comapny-wise-sale-summary')}`} element={<PartyWiseComapnyWiseSaleSummary />} />
+              <Route path={`/${encodePath('party-wise-group-wise-sale-summary')}`} element={<PartyWiseGroupWiseSaleSummary />} />
+              <Route path={`/${encodePath('party-wise-item-wise-sale-summary')}`} element={<PartyWiseItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('party-wise-salt-wise-sale-summary')}`} element={<PartyWiseSaltWiseSaleSummary />} />
+              <Route path={`/${encodePath('price-diff-credit-note')}`} element={<PriceDiffCreditNote />} />
+              <Route path={`/${encodePath('salt-wise-item-wise-sale-summary')}`} element={<SaltWiseItemWiseSaleSummary />} />
+              <Route path={`/${encodePath('salt-wise-sale-summary')}`} element={<SaltWiseSaleSummary />} />
+              <Route path={`/${encodePath('supplier-wise-item-wise-sale-register')}`} element={<SupplierWiseItemWiseSaleRegister />} />
+              {/* Purchase Report */}
+              <Route path={`/${encodePath('purchase-register')}`} element={<PurchaseRegister />} />
+              <Route path={`/${encodePath('mrpRate-diff-report')}`} element={<MrpRateDiffReport />} />
+              <Route path={`/${encodePath('supplier-purchase-register')}`} element={<SupplierPurchaseRegister />} />
+              <Route path={`/${encodePath('itemWise-best-supplier')}`} element={<ItemWiseBestSupplier />} />
+              <Route path={`/${encodePath('group-monthly-purchase')}`} element={<GroupMonthlyPurchase />} />
+              <Route path={`/${encodePath('party-purchase-report')}`} element={<PartyPurchaseReport />} />
+              <Route path={`/${encodePath('monthly-purchase')}`} element={<MonthlyPurchase />} />
+              <Route path={`/${encodePath('dayWise-purchase')}`} element={<DayWisePurchase />} />
+              <Route path={`/${encodePath('item-purchase-report')}`} element={<ItemsPurchaseReport />} />
+              <Route path={`/${encodePath('bill-wise-item-purchase')}`} element={<BillWiseItemPurchase />} />
+
+              {/* GSTReport */}
+              <Route path={`/${encodePath('gst-return')}`} element={<GSTReturns />} />
+              <Route path={`/${encodePath('gst-column-purchase')}`} element={<GSTColumnPurchase />} />
+              <Route path={`/${encodePath('gst-column-purchase-old')}`} element={<GSTColumnPurchaseOld />} />
+              <Route path={`/${encodePath('gst-column-sale')}`} element={<GSTColumnSale />} />
+              <Route path={`/${encodePath('gst-column-sale-old')}`} element={<GSTColumnSaleOld />} />
+              <Route path={`/${encodePath('gst-purchase-register')}`} element={<GSTPurchaseRegister />} />
+              <Route path={`/${encodePath('gst-registers')}`} element={<GSTRegisters />} />
+              <Route path={`/${encodePath('gst-sale-register')}`} element={<GSTSaleRegister />} />
+              <Route path={`/${encodePath('gst-tax-clubbing')}`} element={<GSTTaxClubbing />} />
+              <Route path={`/${encodePath('show-gst-detail')}`} element={<ShowGSTDetail />} />
+              <Route path={`/${encodePath('update-gstin-pin-code')}`} element={<UpdateGSTINPinCode />} />
+              <Route path={`/${encodePath('eway-invoice')}`} element={<EWayEInvoice />} />
+              <Route path={`/${encodePath('tcstds-register')}`} element={<TCSTDSRegistes />} />
+              {/* DepartmentalReport */}
+              <Route path={`/${encodePath('GpReportGrid')}`} element={<GpReportGrid />} />
+              <Route path={`/${encodePath('billWise-itemWise-schedule-register-retail')}`} element={<BillWiseItemWiseScheduleRegisterRetail />} />
+              <Route path={`/${encodePath('billWise-itemWise-schedule-register-wholsale')}`} element={<BillWiseItemWiseScheduleRegisterWholSale />} />
+              {/* DispatchModule */}
+              <Route path={`/${encodePath('annexure')}`} element={<Annexure />} />
+              <Route path={`/${encodePath('checking')}`} element={<Checking />} />
+              <Route path={`/${encodePath('delivery')}`} element={<Delivery />} />
+              <Route path={`/${encodePath('dispatch-dash-board')}`} element={<DispatchDashBoard />} />
+              <Route path={`/${encodePath('dispatch-report')}`} element={<DispatchReport />} />
+              <Route path={`/${encodePath('packing')}`} element={<Packing />} />
+              <Route path={`/${encodePath('picking-dispatch-summary')}`} element={<PickingDispatchSummary />} />
+              <Route path={`/${encodePath('un-deliver')}`} element={<UnDeliver />} />
+              <Route path={`/${encodePath('update-stock-value')}`} element={<UpdateStockValue />} />
+              {/* Email */}
+              <Route path={`/${encodePath('mail-config-entry')}`} element={<MailConfigEntry />} />
+              <Route path={`/${encodePath('general-email')}`} element={<GeneralEmail />} />
+              <Route path={`/${encodePath('general-SMS')}`} element={<GeneralSMS />} />
+              {/* Exit */}
+              <Route path={`/${encodePath('set-device')}`} element={<SetDevice />} />
+              <Route path={`/${encodePath('refresh-printer-names')}`} element={<RefreshPrinterNames />} />
+              <Route path={`/${encodePath('MenuHelp')}`} element={<MenuHelp />} />
+              <Route path={`/${encodePath('change-wallpaper')}`} element={<ChangeWallpaper />} />
               {/* If Click Wrong Url Redirect Home Page */}
               <Route path="*" element={<Navigate to={`/${encodePath('home')}`} replace />} />
             </Routes>
             <Footer />
+
           </div>
         </div>
       </div>
+      <Foot />
+      {/* Footer 2 */}
     </HashRouter>
   );
 }
-
 export default SubNavigation;

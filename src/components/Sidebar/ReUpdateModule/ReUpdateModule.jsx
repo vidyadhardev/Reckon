@@ -20,62 +20,56 @@ const ReUpdateModule = () => {
             <FaMegaport className="me-1" /> ReUpdate Module
           </span>
           <div className={`collapse ps-2 ${activeMenu === 're-update-collapse' ? 'show' : ''}`} id="re-update-collapse">
-            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
-              <div>
-                <span
-                  className={`btn btn-outline-info mt-2 w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-1`}
-                >
-                  <Link to={`/${encodePath('re-update-item-stock')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  ReUpdate Item Stock
-                  </Link>
-                </span>
+            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <div className="voucher-type module mt-2">
+                <Link to={`/${encodePath('re-update-item-stock')}`} className="media text-decoration-none text-dark">
+                  <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                    ReUpdate Item Stock
+                  </span>
+                </Link>
               </div>
-              <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('re-update-ledger-balance')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  ReUpdateLedgerBalance
-                  </Link>
-                </span>
+
+              <div className="voucher-type module">
+                <Link to={`/${encodePath('re-update-ledger-balance')}`} className="media text-decoration-none text-dark">
+                  <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                    ReUpdateLedgerBalance
+                  </span>
+                </Link>
               </div>
-              <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('master-rate-update')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  Master Rate Update
-                  </Link>
-                </span>
+
+              <div className="voucher-type module">
+                <Link to={`/${encodePath('master-rate-update')}`} className="media text-decoration-none text-dark">
+                  <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                    Master Rate Update
+                  </span>
+                </Link>
               </div>
-              <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('adjust-nagetive-stock')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  Adjust Negative Stock
-                  </Link>
-                </span>
+
+              <div className="voucher-type module">
+                <Link to={`/${encodePath('adjust-nagetive-stock')}`} className="media text-decoration-none text-dark">
+                  <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                    AdjustNegativeStock
+                  </span>
+                </Link>
               </div>
-              <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('re-update-godwon-stock')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  ReUpdateGodownStock
-                  </Link>
-                </span>
+
+              <div className="voucher-type module">
+                <Link to={`/${encodePath('re-update-godwon-stock')}`} className="media text-decoration-none text-dark">
+                  <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                    ReUpdateGodownStock
+                  </span>
+                </Link>
               </div>
-              <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('generation-production-entry')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-                  GenerateProductionEntry
-                  </Link>
-                </span>
+
+              <div className="voucher-type module">
+                <Link to={`/${encodePath('generation-production-entry')}`} className="media text-decoration-none text-dark">
+                  <span className="btn btn-outline-info mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-dark w-100">
+                    GenerateProductionEntry
+                  </span>
+                </Link>
               </div>
             </ul>
+
           </div>
         </li>
       </div>

@@ -34,8 +34,18 @@ import PurchaseInvoice from './PurchaseInvoice/PurchaseInvoice';
 import PurchaseReturn from './PurchaseReturn/PurchaseReturn';
 import Replacement from './Replacement/Replacement';
 import PriceDifference from './PriceDifference/PriceDifference';
-
-
+import ExpiryIssue from './ExpiryIssue/ExpiryIssue';
+import ExpiryReceive from './ExpiryReceive/ExpiryReceive';
+import StockTransfer from './StockTransfer&Report/StockTransfer';
+import SalesReport from './SalesReport/SalesReport';
+import PurchaseReport from './PurchaseReport/PurchaseReport';
+import GSTReport from './GSTReport/GSTReport';
+// import AccountsReport from './AccountsReport/AccountsReport';
+// import TrialBalanceAlpha from './TrialBalanceAlpha/TrialBalanceAlpha';
+import DepartmentalReport from './DepartmentalReport/DepartmentalReport';
+import DispatchModule from './DispatchModule/DispatchModule';
+import EmailModule from './EmailModule/EmailModule';
+import Exit from './Exit/Exit';
 
 const SideBar = () => {
   const [activeMenu, SetActiveMenu] = useState('');
@@ -51,7 +61,7 @@ const SideBar = () => {
             className={`btn btn-toggle d-inline-flex align-items-center rounded border-info border-2 fw-bold reckon-header w-100 mb-2 mt-2 ${activeMenu === 'reckon-demo-collapse' ? '' : 'collapsed'}`}
             onClick={() => handleMenuClick('reckon-demo-collapse')}
             aria-expanded={activeMenu === 'reckon-demo-collapse'}
-            
+
           >
             <FaAccusoft className="me-2" />Reckon Demo
           </span>
@@ -61,7 +71,7 @@ const SideBar = () => {
             </ul>
           </div>
         </li>
-         <Installation /> 
+        <Installation />
         <li className="mb-5">
           <span
             className={`btn btn-toggle d-inline-flex align-items-center rounded border-info border-2 fw-bold reckon-header w-100 mb-2 mt-2 ${activeMenu === 'reckon-software-collapse' ? '' : 'collapsed'}`}
@@ -71,17 +81,17 @@ const SideBar = () => {
             <FaAccusoft className="me-2" />Reckon Software
           </span>
           <div className={`collapse ps-2 ${activeMenu === 'reckon-software-collapse' ? 'show' : ''}`} id="reckon-software-collapse">
-            <ul className="btn-toggle-nav list-unstyled fw-normal pb-5 small"> 
-               <Administration />
+            <ul className="btn-toggle-nav list-unstyled fw-normal pb-5 small">
+              <Administration />
               <UserModule />
               <UtilitiesSidebar />
               <MergeModule />
               <ReUpdateModule />
               <AccountMaster />
               <InventoryMaster />
-              <OtherMaster /> 
-               <SchemOffer/>  
-               <PriceDiscount />
+              <OtherMaster />
+              <SchemOffer />
+              <PriceDiscount />
               <FieldForce />
               <LoyaltyModule />
               <AccountModule />
@@ -102,10 +112,22 @@ const SideBar = () => {
               <PurchaseInvoice />
               <PurchaseReturn />
               <Replacement />
-              <PriceDifference/> 
+              <PriceDifference />
+              <ExpiryIssue />
+              <ExpiryReceive />
+              <StockTransfer />
+              <SalesReport />
+              <PurchaseReport />
+              <GSTReport />
+              {/* <AccountsReport />
+              <TrialBalanceAlpha /> */}
+              <DepartmentalReport />
+              <DispatchModule />
+              <EmailModule />
+              <Exit/>
             </ul>
           </div>
-        </li>  
+        </li>
       </ul>
     </div>
   );

@@ -51,7 +51,6 @@ const SearchBar = () => {
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
-
   return (
     <>
       <Navbar expand="sm" className="justify-content-between searchbar-fix" >
@@ -69,7 +68,9 @@ const SearchBar = () => {
             className=" bg-light border border-2"
             aria-expanded={isNavbarOpen}
             title='Click to Open searchbar'
-          ><FiSearch /></Navbar.Toggle>
+          >
+            <FiSearch />
+          </Navbar.Toggle>
 
           {/* Navbar Collapse (search input) */}
           <Navbar.Collapse id="navbarScroll" className={`justify-content-center ms-lg-5 ${'show' ? 'isNavbarOpen' : ''} `}>
@@ -78,9 +79,8 @@ const SearchBar = () => {
               onClick={handleSearchClick}
               placeholder=" Search Here ..."
               className='search-input border-2 border-info '
-              autoFocus
               readOnly
-              // disabled
+            // disabled
             />
           </Navbar.Collapse>
         </Container>

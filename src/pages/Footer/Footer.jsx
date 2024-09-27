@@ -1,6 +1,8 @@
 import React from "react";
+
 import { BiPhone, BiMobileVibration } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
+
 const Footer = () => {
   return (
     <>
@@ -42,17 +44,18 @@ const Footer = () => {
           <div>
             <ul className="list-unstyled">
               <li>
-              <BiMobileVibration className="me-2" />  7510000636  - Central India <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9891185959  - North India<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9324387120  - West India <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9330182702 - East India  <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8700247593 - North East<br />
+                <BiMobileVibration className="me-2" />  7510000636  - Central India <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9891185959  - North India<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9324387120  - West India <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9330182702 - East India  <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8700247593 - North East<br />
                 <MdEmail className="me-2" /> sales@reckonsales.com
               </li>
             </ul>
           </div>
         </div>
       </div>
+      
     </>
   )
 }

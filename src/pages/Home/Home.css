@@ -19,6 +19,7 @@
   .home-page{
     margin-top: 0px !important;
     padding: 5px !important;
+    transition: all ease 0.3s;
   }
   /* Adjust text size for specific elements */
   .home-page p,
@@ -37,6 +38,7 @@
   .home-page{
     margin-top: 0px !important;
     padding: 10px !important;
+    
   }
   /* Adjust text size for specific elements */
   .home-page p,
@@ -49,4 +51,5 @@
     font-size: 9px !important;
     padding: 0px !important;
   }
+
 }

@@ -22,64 +22,58 @@ const UserModule = () => {
           <div className={`collapse ps-1 ${activeMenu === 'user-module-collapse' ? 'show' : ''}`} id="user-module-collapse">
             <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
               <div>
-                <span
-                  className={`btn btn-outline-info mt-2 w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button mt-1`}
-                >
-                  <Link to={`/${encodePath('user-module-en')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-
+                <Link to={`/${encodePath('user-module-en')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                  <span
+                    className={`btn btn-outline-info w-100 mt-2 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black`}
+                  >
                     User Module Entry
-                  </Link>
-                </span>
+                  </span>
+                </Link>
               </div>
               <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('global-user-en')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-
-                    Global User Entry
-                  </Link>
-                </span>
+                <Link to={`/${encodePath('global-user-en')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                  <span
+                     className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black`}
+                  >
+                    Global User
+                  </span>
+                </Link>
               </div>
               <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('gb-update-rt')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-
+                <Link to={`/${encodePath('gb-update-rt')}`}  className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                  <span
+                    className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black`}
+                  >
                     Global Rights Update
-                  </Link>
-                </span>
+                  </span>
+                </Link>
               </div>
               <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('user-frm-rt-en')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-
+                <Link to={`/${encodePath('user-frm-rt-en')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                  <span
+                    className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black`}
+                  >
                     User Firm Rights Entry
-                  </Link>
-                </span>
+                  </span>
+                </Link>
               </div>
               <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('user-srs-rth-en')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-
+                <Link to={`/${encodePath('user-srs-rth-en')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                  <span
+                    className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black`}
+                  >
                     User Series Rights
-                  </Link>
-                </span>
+                  </span>
+                </Link>
               </div>
               <div>
-                <span
-                  className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button `}
-                >
-                  <Link to={`/${encodePath('user-other-en')}`} className="d-inline-flex text-dark text-decoration-none rounded">
-
+                <Link to={`/${encodePath('user-other-en')}`} className="d-inline-flex text-dark text-decoration-none rounded w-100">
+                  <span
+                    className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black`}
+                  >
                     User Other Entry
-                  </Link>
-                </span>
+                  </span>
+                </Link>
               </div>
             </ul>
           </div>
