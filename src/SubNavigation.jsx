@@ -31,8 +31,8 @@ import WhatsAppSetup from './pages/Installation/WhatsAppSetup.jsx';
 import LANConfigure from './pages/Installation/LANConfigure.jsx';
 import UserCreate from './pages/Installation/UserCreate.jsx';
 import PrinterPageSetup from './pages/Installation/PrinterPageSetup.jsx';
-import DownloadSQLServer from './pages/Installation/DownloadSQLServer.jsx';
-import Installation from './components/Sidebar/Installation/Installation.jsx';
+import DownloadSQLSSMSSetup from './pages/Installation/DownloadSQLSSMSSetup.jsx';
+// import Installation from './components/Sidebar/Installation/Installation.jsx';
 // Installation End 
 // Sidebar
 import SearchBar from './components/SearchBar/SearchBar.jsx'
@@ -435,7 +435,7 @@ import ShowGSTDetail from './pages/GSTReport/ShowGSTDetail.jsx';
 import TCSTDSRegistes from './pages/GSTReport/TCSTDSRegistes.jsx';
 import UpdateGSTINPinCode from './pages/GSTReport/UpdateGSTINPinCode.jsx';
 import GSTTaxClubbing from './pages/GSTReport/GSTTaxClubbing.jsx';
-//DepartmentalReport
+// DepartmentalReport
 import GpReportGrid from './pages/DepartmentalReport/GpReportGrid.jsx';
 import BillWiseItemWiseScheduleRegisterRetail from './pages/DepartmentalReport/BillWiseItemWiseScheduleRegisterRetail.jsx';
 import BillWiseItemWiseScheduleRegisterWholSale from './pages/DepartmentalReport/BillWiseItemWiseScheduleRegisterWholSale.jsx';
@@ -461,13 +461,11 @@ import MenuHelp from './pages/Exit/MenuHelp.jsx';
 import ChangeWallpaper from './pages/Exit/ChangeWallpaper.jsx';
 // Footer 
 import Footer from './pages/Footer/Footer.jsx';
-import Foot from './pages/Foot.jsx';
-
+// import Foot from './pages/Foot.jsx';
 const SubNavigation = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -478,16 +476,16 @@ const SubNavigation = () => {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
-
   const toggleMobileSidebar = () => {
     setIsMobileSidebarOpen(!isMobileSidebarOpen);
   };
   return (
+    
     <HashRouter className="parent">
       <SearchBar />
       {isMobile && (
         <div
-          onClick={toggleMobileSidebar} // Toggle MobileSideBar visibility on click
+          onClick={toggleMobileSidebar}
           style={{
             position: 'fixed',
             top: '8px',
@@ -497,13 +495,11 @@ const SubNavigation = () => {
             borderRadius: '5px',
             cursor: 'pointer',
             padding: '10px',
-
           }}
         >
           <MobileSideBar /> {/* Use MobileSideBar as clickable toggle */}
         </div>
       )}
-
       {isMobileSidebarOpen && (
         <div
           style={{
@@ -515,7 +511,6 @@ const SubNavigation = () => {
             backgroundColor: '#fff',
             boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
             zIndex: 1000,
-
           }}
         >
           {/* This Sidebar For Mobile View */}
@@ -534,19 +529,15 @@ const SubNavigation = () => {
               scrollbarWidth: "thin",
               scrollbarColor: "#0dcaf0 white",
               display: isMobile && !isSidebarOpen ? 'none' : 'block',
-
             }}
           >
             {/* This Sidebar For Desktop View */}
             <SideBar />
           </div>
-
           <div className="col-10 all-page-fix"
             style={{
               marginLeft: isMobile && !isSidebarOpen ? '0%' : '17.5%',
               width: isMobile && !isSidebarOpen ? '100%' : 'calc(100% - 17.5%)',
-              // scrollBehavior:"smooth",
-              // transition: 'all ease-in-out 0.2s' 
             }}
           >
             <Routes>
@@ -560,7 +551,7 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('restaurant-bar-software')}`} element={<RestaurantBarSoftware />} />
               {/* Installation */}
               <Route path={`/${encodePath('download-reckon')}`} element={<DownloadReckon />} />
-              <Route path={`/${encodePath('download-sql-server')}`} element={<DownloadSQLServer />} />
+              <Route path={`/${encodePath('download-sql-server')}`} element={<DownloadSQLSSMSSetup />} />
               <Route path={`/${encodePath('reckon-installation')}`} element={<ReckonInstallation />} />
               <Route path={`/${encodePath('sql-server-installation')}`} element={<SQLServerInstallation />} />
               <Route path={`/${encodePath('update-new-version')}`} element={<UpdateNewVersion />} />
@@ -973,7 +964,6 @@ const SubNavigation = () => {
               <Route path={`/${encodePath('dayWise-purchase')}`} element={<DayWisePurchase />} />
               <Route path={`/${encodePath('item-purchase-report')}`} element={<ItemsPurchaseReport />} />
               <Route path={`/${encodePath('bill-wise-item-purchase')}`} element={<BillWiseItemPurchase />} />
-
               {/* GSTReport */}
               <Route path={`/${encodePath('gst-return')}`} element={<GSTReturns />} />
               <Route path={`/${encodePath('gst-column-purchase')}`} element={<GSTColumnPurchase />} />
@@ -1015,11 +1005,10 @@ const SubNavigation = () => {
               <Route path="*" element={<Navigate to={`/${encodePath('home')}`} replace />} />
             </Routes>
             <Footer />
-
           </div>
         </div>
       </div>
-      <Foot />
+      {/* <Foot /> */}
       {/* Footer 2 */}
     </HashRouter>
   );

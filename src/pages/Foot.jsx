@@ -18,7 +18,8 @@ const Foot = () => {
             <pre><span style={{ color: "rgb(77, 216, 238)" }}>Contact :</span> <a href={`https://wa.me/9076944738?text=${WtMassage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-decoration-none"> <span className='fs-5 rounded justify-content-center align-content-center'><FaWhatsapp /></span> Chat On WhatsApp</a></pre>
+              className=' rounded justify-content-center align-content-center text-decoration-none'
+            > <span ><FaWhatsapp /></span> Chat On WhatsApp</a></pre>
           </center>
         </Bounce>
       </div>

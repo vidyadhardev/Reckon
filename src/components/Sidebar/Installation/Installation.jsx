@@ -33,13 +33,13 @@ const Installation = () => {
                 Download SQL Server
               </span>
             </Link>
-            <Link to={`/${encodePath('sql-server-installation')}`} className='text-decoration-none'>
+            {/* <Link to={`/${encodePath('sql-server-installation')}`} className='text-decoration-none'>
               <span
                 className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black `}
               >
                 SQL Server Installation
               </span>
-            </Link>
+            </Link> */}
             <Link to={`/${encodePath('reckon-installation')}`} className='text-decoration-none'>
               <span
                 className={`btn btn-outline-info w-100 mb-2 d-inline-flex align-items-center rounded border-2 admin-Sub-button text-black `}

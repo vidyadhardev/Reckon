@@ -80,7 +80,7 @@ const SearchBar = () => {
               placeholder=" Search Here ..."
               className='search-input border-2 border-info '
               readOnly
-            // disabled
+              disabled
             />
           </Navbar.Collapse>
         </Container>
